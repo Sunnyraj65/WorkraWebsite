@@ -1,7 +1,7 @@
 export const heroData = {
-  title: "AI-Assisted Home Services",
-  titleItalic: "You Can Trust",
-  subtitle: "Vergé helps you track, analyze, and understand your customers with real-time insights to boost retention and revenue.",
+  title: "India’s Smartest Way",
+  titleItalic: "to Book Home Services",
+  subtitle: "Don’t know the problem? Just chat. Our AI will figure it out and book the right expert.",
   stats: [
     { label: "Conversion Rate", value: "9.73%", icon: "play" },
     { label: "Todays Visitors", value: "17,640", change: "51%", icon: "globe" }

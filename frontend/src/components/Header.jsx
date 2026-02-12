@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { useState, useEffect } from "react";
+import workraWhiteLogo from "../assets/workrawhitelogo.png";
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,8 +9,8 @@ export const Header = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 100);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -19,22 +19,20 @@ export const Header = () => {
         <div
           className={`flex items-center rounded-full px-4 py-2.5 border transition-all duration-500 ${
             scrolled
-              ? 'bg-zinc-800/80 backdrop-blur-2xl border-zinc-700/30 shadow-lg'
-              : 'bg-white/10 backdrop-blur-xl border-white/10'
+              ? "bg-zinc-800/80 backdrop-blur-2xl border-zinc-700/30 shadow-lg"
+              : "bg-white/10 backdrop-blur-xl border-white/10"
           }`}
         >
-          <span
-            className={`font-serif text-xl tracking-tight mr-3 transition-colors duration-500 ${
-              scrolled ? 'text-white' : 'text-white'
-            }`}
-          >
-            Vergé
-          </span>
+          <img
+            src={workraWhiteLogo}
+            alt="Workra"
+            className="h-6 md:h-8 w-auto mr-3 transition-opacity duration-500"
+          />
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="bg-white text-zinc-900 rounded-full px-5 py-1.5 text-sm font-medium hover:bg-zinc-100 transition-colors duration-200"
           >
-            {menuOpen ? 'Close' : 'Menu'}
+            {menuOpen ? "Close" : "Menu"}
           </button>
         </div>
       </div>
@@ -42,16 +40,18 @@ export const Header = () => {
       {/* Mobile Menu Overlay */}
       <div
         className={`fixed inset-0 top-[72px] bg-verge-green/98 backdrop-blur-lg z-40 transition-all duration-300 ${
-          menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+          menuOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
         }`}
       >
         <nav className="flex flex-col items-start px-8 pt-10 gap-6">
-          {['Home', 'Features', 'Pricing', 'Blog', 'Contact'].map((item, i) => (
+          {["Home", "Features", "Pricing", "Blog", "Contact"].map((item, i) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
               className="text-white text-2xl font-serif hover:text-verge-accent transition-colors duration-200"
-              style={{ transitionDelay: menuOpen ? `${i * 60}ms` : '0ms' }}
+              style={{ transitionDelay: menuOpen ? `${i * 60}ms` : "0ms" }}
               onClick={() => setMenuOpen(false)}
             >
               {item}

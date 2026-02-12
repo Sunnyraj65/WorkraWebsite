@@ -2,10 +2,11 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
-import { ValueBar } from "./components/ValueBar";
-import { FeaturesSection } from "./components/FeaturesSection";
+import { ServicesSection } from "./components/ServicesSection";
 import { TestimonialSection } from "./components/TestimonialSection";
-import { DashboardPreview } from "./components/DashboardPreview";
+import { StepsSection } from "./components/StepsSection";
+import { WhyChooseSection } from "./components/WhyChooseSection";
+import { FAQSection } from "./components/FAQSection";
 import { Footer } from "./components/Footer";
 
 const LandingPage = () => {
@@ -13,10 +14,12 @@ const LandingPage = () => {
     <div className="landing-page">
       <Header />
       <HeroSection />
-      <ValueBar />
-      <FeaturesSection />
-      <TestimonialSection />
-      <DashboardPreview />
+
+      <ServicesSection />
+
+      <StepsSection />
+      <WhyChooseSection />
+      <FAQSection />
       <Footer />
     </div>
   );
