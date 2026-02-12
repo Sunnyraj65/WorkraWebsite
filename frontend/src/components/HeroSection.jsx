@@ -147,12 +147,10 @@ export const HeroSection = () => {
                   Todays Visitors
                 </span>
               </div>
-              <div className="flex items-baseline gap-3">
-                <p className="text-white text-3xl font-serif">17,640</p>
-                <span className="flex items-center text-verge-accent text-sm">
-                  <TrendingUp className="w-3.5 h-3.5 mr-1" />
-                  51%
-                </span>
+              <div className="mt-2">
+                <p className="text-white/80 text-xl font-medium italic tracking-wide">
+                  Coming Soon
+                </p>
               </div>
             </div>
           </div>
