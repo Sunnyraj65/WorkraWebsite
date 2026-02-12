@@ -115,14 +115,6 @@ export const Footer = () => {
                   Contact Us
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-white font-medium hover:text-[#00C885] hover:bg-white/10 px-3 py-1 -ml-3 rounded-lg transition-all"
-                >
-                  Delete Account
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -143,7 +135,9 @@ export const Footer = () => {
               <Facebook size={20} />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/workra_"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white/10 p-3 rounded-full hover:bg-white/20 hover:scale-110 transition-all text-white"
             >
               <Instagram size={20} />
