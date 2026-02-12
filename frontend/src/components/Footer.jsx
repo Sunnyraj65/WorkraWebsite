@@ -30,6 +30,15 @@ export const Footer = () => {
                 +91 70507 01478
               </span>
             </a>
+            <a
+              href="tel:+919798105359"
+              className="inline-flex items-center gap-3 px-8 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full transition-all duration-300 backdrop-blur-sm group"
+            >
+              <Phone className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
+              <span className="text-white font-medium tracking-wide">
+                +91 97981 05359
+              </span>
+            </a>
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Phone } from "lucide-react";
 import workraWhiteLogo from "../assets/workrawhitelogo.png";
 
 export const Header = () => {
@@ -46,10 +47,10 @@ export const Header = () => {
         }`}
       >
         <nav className="flex flex-col items-start px-8 pt-10 gap-6">
-          {["Home", "Features", "Pricing", "Blog", "Contact"].map((item, i) => (
+          {["Services", "How It Works", "Why Us", "FAQ"].map((item, i) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
               className="text-white text-2xl font-serif hover:text-verge-accent transition-colors duration-200"
               style={{ transitionDelay: menuOpen ? `${i * 60}ms` : "0ms" }}
               onClick={() => setMenuOpen(false)}
@@ -57,9 +58,22 @@ export const Header = () => {
               {item}
             </a>
           ))}
-          <button className="mt-4 bg-verge-accent text-white rounded-full px-8 py-3 text-sm font-medium hover:bg-verge-accent/85 transition-colors duration-200">
-            Schedule a demo
-          </button>
+          <div className="flex flex-col gap-3 mt-4 w-full sm:w-auto">
+            <a
+              href="tel:+917050701478"
+              className="bg-verge-accent text-white rounded-full px-6 py-3 text-sm font-medium hover:bg-verge-accent/85 transition-colors duration-200 flex items-center justify-center gap-2"
+            >
+              <Phone className="w-4 h-4" />
+              +91 70507 01478
+            </a>
+            <a
+              href="tel:+919798105359"
+              className="bg-verge-accent text-white rounded-full px-6 py-3 text-sm font-medium hover:bg-verge-accent/85 transition-colors duration-200 flex items-center justify-center gap-2"
+            >
+              <Phone className="w-4 h-4" />
+              +91 97981 05359
+            </a>
+          </div>
         </nav>
       </div>
     </header>

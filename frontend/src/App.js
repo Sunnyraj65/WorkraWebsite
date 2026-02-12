@@ -15,11 +15,19 @@ const LandingPage = () => {
       <Header />
       <HeroSection />
 
-      <ServicesSection />
+      <div id="services">
+        <ServicesSection />
+      </div>
 
-      <StepsSection />
-      <WhyChooseSection />
-      <FAQSection />
+      <div id="how-it-works">
+        <StepsSection />
+      </div>
+      <div id="why-us">
+        <WhyChooseSection />
+      </div>
+      <div id="faq">
+        <FAQSection />
+      </div>
       <Footer />
     </div>
   );
