@@ -12,7 +12,7 @@ const steps = [
   },
   {
     step: "STEP 2",
-    title: "Add the service into \nyour cart",
+    title: "Just chat and tell \nus your problem",
     image: chatImage,
     delay: 200,
   },
