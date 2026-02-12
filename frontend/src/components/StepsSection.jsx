@@ -6,7 +6,7 @@ import acBookingImage from "../assets/ac booking.png";
 const steps = [
   {
     step: "STEP 1",
-    title: "Pick from a range of \nhousehelp services",
+    title: "Download the Workra \nApp Powered by AI",
     image: firstPageImage,
     delay: 0,
   },
