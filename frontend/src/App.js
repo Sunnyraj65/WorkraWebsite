@@ -9,6 +9,7 @@ import { WhyChooseSection } from "./components/WhyChooseSection";
 import { FAQSection } from "./components/FAQSection";
 import { Footer } from "./components/Footer";
 import { PrivacyPolicy } from "./components/PrivacyPolicy";
+import { DeleteAccount } from "./components/DeleteAccount";
 
 const LandingPage = () => {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/delete-account" element={<DeleteAccount />} />
         </Routes>
       </BrowserRouter>
     </div>
