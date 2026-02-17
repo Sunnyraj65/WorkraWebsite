@@ -131,6 +131,14 @@ export const Footer = () => {
                   Contact Us
                 </a>
               </li>
+              <li>
+                <Link
+                  to="/delete-account"
+                  className="text-white font-medium hover:text-[#00C885] hover:bg-white/10 px-3 py-1 -ml-3 rounded-lg transition-all"
+                >
+                  Delete Account
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
