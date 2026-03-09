@@ -57,7 +57,9 @@ export const HeroSection = () => {
               }}
             >
               <a
-                href="#"
+                href="https://play.google.com/store/apps/details?id=com.workra.mobile"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex-1 sm:flex-none flex items-center justify-center sm:justify-start gap-3 px-6 sm:px-7 py-3 sm:py-3.5 bg-[#181818] border border-white/20 rounded-xl hover:bg-white/5 transition-colors group min-w-0"
               >
                 <svg
