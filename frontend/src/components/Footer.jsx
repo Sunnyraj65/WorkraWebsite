@@ -147,13 +147,17 @@ export const Footer = () => {
         <div className="flex flex-col items-center border-t border-white/10 pt-10">
           <div className="flex gap-6 mb-6">
             <a
-              href="#"
+              href="https://www.linkedin.com/company/workra"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white/10 p-3 rounded-full hover:bg-white/20 hover:scale-110 transition-all text-white"
             >
               <Linkedin size={20} />
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61582246742034"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white/10 p-3 rounded-full hover:bg-white/20 hover:scale-110 transition-all text-white"
             >
               <Facebook size={20} />
