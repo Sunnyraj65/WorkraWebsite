@@ -35,11 +35,14 @@ export const Header = () => {
               : "bg-white/10 backdrop-blur-xl border-white/10"
           }`}
         >
-          <img
-            src={workraWhiteLogo}
-            alt="Workra"
-            className="h-6 md:h-8 w-auto mr-3 transition-opacity duration-500"
-          />
+          <a href="/" className="flex items-center gap-2" aria-label="Workra Home">
+            <img
+              src={workraWhiteLogo}
+              alt="Workra – Home Services in Patna"
+              className="h-6 md:h-8 w-auto transition-opacity duration-500"
+            />
+            <span className="text-white font-semibold text-lg md:text-xl tracking-tight">Workra</span>
+          </a>
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="bg-white text-zinc-900 rounded-full px-5 py-1.5 text-sm font-medium hover:bg-zinc-100 transition-colors duration-200"

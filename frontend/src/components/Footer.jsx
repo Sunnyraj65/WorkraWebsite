@@ -17,7 +17,14 @@ export const Footer = () => {
   return (
     <footer className="bg-verge-green py-12 md:py-16 text-white text-left">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
-        {/* Contact Header */}
+        {/* Brand Section */}
+        <div className="mb-12 border-b border-white/10 pb-12">
+          <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">Workra</h2>
+          <p className="text-white/70 text-base md:text-lg max-w-xl leading-relaxed">
+            Workra is Patna's smartest home services platform. Book verified plumbers, electricians, carpenters, and cleaners — powered by AI for instant quotes and hassle-free booking.
+          </p>
+        </div>
+
         {/* Contact Header */}
         <div className="flex flex-col items-start justify-start mb-12 border-b border-white/10 pb-12">
           <p className="text-white/90 text-lg font-medium mb-6">
@@ -171,7 +178,7 @@ export const Footer = () => {
               <Instagram size={20} />
             </a>
           </div>
-          <p className="text-white/40 text-sm font-medium">Workra © 2025</p>
+          <p className="text-white/40 text-sm font-medium">Workra © 2026</p>
         </div>
       </div>
     </footer>
