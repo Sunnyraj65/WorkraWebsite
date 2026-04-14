@@ -7,3 +7,20 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Prerendering for SEO (enable in Netlify Dashboard too)
+[[plugins]]
+  package = "@netlify/plugin-prerender"
+
+# Security & Performance Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

@@ -1,0 +1,16 @@
+{
+  "short_name": "Workra",
+  "name": "Workra – Home Services in Patna",
+  "icons": [
+    {
+      "src": "wlogo.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#45844b",
+  "background_color": "#ffffff",
+  "description": "India's smartest way to book home services. Chat with AI, get instant quotes, and book verified plumbers, electricians, carpenters & cleaners in Patna."
+}
