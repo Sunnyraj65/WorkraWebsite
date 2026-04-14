@@ -41,7 +41,7 @@ export const Header = () => {
               alt="Workra – Home Services in Patna"
               className="h-6 md:h-8 w-auto transition-opacity duration-500"
             />
-            <span className="text-white font-semibold text-lg md:text-xl tracking-tight">Workra</span>
+
           </a>
           <button
             onClick={() => setMenuOpen(!menuOpen)}
