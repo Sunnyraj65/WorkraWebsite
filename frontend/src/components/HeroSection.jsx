@@ -118,7 +118,7 @@ export const HeroSection = () => {
               />
             </div>
 
-            {/* Todays Visitors Card */}
+            {/* Trusted Experts Card */}
             <div
               className="absolute bottom-[10%] right-[-10px] md:right-[-20px] bg-white/10 backdrop-blur-2xl border border-white/20 rounded-xl px-5 py-4 min-w-[220px] shadow-2xl animate-float"
               style={{ animationDelay: "2s" }}
@@ -128,12 +128,12 @@ export const HeroSection = () => {
                   <Globe className="w-3 h-3 text-white" />
                 </div>
                 <span className="text-white text-sm font-medium">
-                  Todays Visitors
+                  Trusted Experts
                 </span>
               </div>
               <div className="mt-2">
                 <p className="text-white/80 text-xl font-medium italic tracking-wide">
-                  Coming Soon
+                  Ready anytime
                 </p>
               </div>
             </div>
