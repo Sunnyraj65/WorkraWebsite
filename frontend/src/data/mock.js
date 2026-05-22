@@ -1,6 +1,6 @@
 export const heroData = {
-  title: "India’s Smartest Way",
-  titleItalic: "to Book Home Services",
+  title: "India's First 0% Commission",
+  titleItalic: "Home Services Platform",
   subtitle: "Don’t know the problem? Just chat. Our AI will figure it out and book the right expert.",
   stats: [
     { label: "Conversion Rate", value: "9.73%", icon: "play" },

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import { SEO } from "./SEO";
 import {
   Shield,
   MapPin,
@@ -66,6 +67,12 @@ export const PrivacyPolicy = () => {
 
   return (
     <div className="min-h-screen bg-verge-cream">
+      <SEO
+        title="Privacy Policy"
+        description="Workra Privacy Policy – Learn how we collect, use, and protect your personal information. Your data security is our priority."
+        path="/privacy-policy"
+        keywords="Workra privacy policy, data protection, user privacy, home services privacy"
+      />
       <Header />
 
       {/* Hero Banner */}

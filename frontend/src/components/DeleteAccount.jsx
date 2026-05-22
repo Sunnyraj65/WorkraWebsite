@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import { SEO } from "./SEO";
 import {
   UserX,
   ArrowLeft,
@@ -76,6 +77,12 @@ export const DeleteAccount = () => {
 
   return (
     <div className="min-h-screen bg-verge-cream">
+      <SEO
+        title="Delete Account"
+        description="Request deletion of your Workra account and personal data. We process all deletion requests within 7 business days."
+        path="/delete-account"
+        noIndex={true}
+      />
       <Header />
 
       {/* Hero Banner */}

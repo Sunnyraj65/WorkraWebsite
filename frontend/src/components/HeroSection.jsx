@@ -28,12 +28,15 @@ export const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Left Content */}
           <div className="relative z-10">
-            <h1 className="text-white leading-[1.2] animate-fade-in-up">
-              <span className="font-sans text-5xl md:text-6xl lg:text-[5.5rem] font-semibold block">
-                {heroData.title}
+            <h1 className="text-white leading-[1.15] animate-fade-in-up">
+              <span className="font-sans text-4xl md:text-5xl lg:text-[4.5rem] font-semibold block">
+                India's First
               </span>
-              <span className="font-sans text-5xl md:text-6xl lg:text-[5.5rem] italic font-semibold block mt-1">
-                {heroData.titleItalic}
+              <span className="font-sans text-4xl md:text-5xl lg:text-[4.5rem] font-semibold block mt-1">
+                <span className="text-[#a8e6a3]">0% Commission</span>
+              </span>
+              <span className="font-sans text-4xl md:text-5xl lg:text-[4.5rem] font-semibold block mt-1">
+                Home Services Platform
               </span>
             </h1>
             <p
@@ -75,27 +78,6 @@ export const HeroSection = () => {
                   </span>
                   <span className="text-base sm:text-lg font-semibold text-white leading-none font-sans truncate">
                     Google Play
-                  </span>
-                </div>
-              </a>
-
-              <a
-                href="#"
-                className="flex-1 sm:flex-none flex items-center justify-center sm:justify-start gap-3 px-6 sm:px-7 py-3 sm:py-3.5 bg-[#181818] border border-white/20 rounded-xl hover:bg-white/5 transition-colors group min-w-0"
-              >
-                <svg
-                  className="w-8 h-8 text-white group-hover:scale-105 transition-transform shrink-0"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-.35-.16-1.07-.16-1.42 0-1.03.48-2.1.55-3.08-.4-1.93-1.87-3.26-6.43-1.36-9.17 1.16-1.68 2.92-2.12 4.14-1.61.64.27 1.22.28 1.86 0 1.21-.53 3.09-.13 4.16 1.63-.1.06-.92.54-1.12 1.68-.23 1.35.38 2.76 1.94 3.39-.42 1.25-1.04 2.5-1.92 3.52-.12.14-.24.28-.35.43-.63.74-1.1 1.07-1.78 1.07-.06 0-.12 0-.17-.02zM12.04 7.25c-.24-2.84 2.1-5.18 4.95-5.25.26 3.12-2.82 5.6-4.95 5.25z" />
-                </svg>
-                <div className="flex flex-col text-left min-w-0">
-                  <span className="text-[10px] uppercase font-medium text-white/60 leading-none mb-1 truncate">
-                    Download on the
-                  </span>
-                  <span className="text-base sm:text-lg font-semibold text-white leading-none font-sans truncate">
-                    App Store
                   </span>
                 </div>
               </a>

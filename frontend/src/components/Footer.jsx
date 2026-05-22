@@ -41,7 +41,7 @@ export const Footer = () => {
               </span>
             </a>
             <a
-              href="https://wa.me/917050701478"
+              href="https://wa.me/919334132209"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full transition-all duration-300 backdrop-blur-sm group"
