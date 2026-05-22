@@ -8,9 +8,6 @@
   to = "/index.html"
   status = 200
 
-# Prerendering for SEO (enable in Netlify Dashboard too)
-[[plugins]]
-  package = "@netlify/plugin-prerender"
 
 # Security & Performance Headers
 [[headers]]
