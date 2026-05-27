@@ -1,6 +1,6 @@
-import React, { useRef, useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, Clock, Sparkles, ShieldCheck } from "lucide-react";
 
 // Importing images from assets
 import girlcleaning from "../assets/girlcleaning.png";
@@ -35,36 +35,6 @@ const services = [
 ];
 
 export const ServicesSection = () => {
-  const scrollRef = useRef(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
-
-  const checkScroll = () => {
-    const el = scrollRef.current;
-    if (!el) return;
-    setCanScrollLeft(el.scrollLeft > 0);
-    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 10);
-  };
-
-  useEffect(() => {
-    checkScroll();
-    const el = scrollRef.current;
-    if (el) {
-      el.addEventListener("scroll", checkScroll);
-      return () => el.removeEventListener("scroll", checkScroll);
-    }
-  }, []);
-
-  const scroll = (direction) => {
-    const el = scrollRef.current;
-    if (!el) return;
-    const scrollAmount = 280;
-    el.scrollBy({
-      left: direction === "left" ? -scrollAmount : scrollAmount,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <section className="py-8 md:py-14 px-4 md:px-8 lg:px-16">
       <div className="max-w-[1400px] mx-auto">
@@ -111,7 +81,7 @@ export const ServicesSection = () => {
               </Link>
             </div>
 
-            {/* Bottom Service Cards */}
+            {/* Bottom — Cleaning in Minutes Feature */}
             <div className="mt-auto">
               {/* Mobile View All */}
               <div className="flex md:hidden justify-end mb-4">
@@ -126,65 +96,126 @@ export const ServicesSection = () => {
                 </Link>
               </div>
 
-              {/* Scroll Navigation Arrows */}
-              <div className="relative">
-                {canScrollLeft && (
-                  <button
-                    onClick={() => scroll("left")}
-                    className="absolute -left-2 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-white/90 shadow-lg flex items-center justify-center hover:bg-white transition-colors"
-                  >
-                    <ChevronLeft className="w-5 h-5 text-slate-700" />
-                  </button>
-                )}
-                {canScrollRight && (
-                  <button
-                    onClick={() => scroll("right")}
-                    className="absolute -right-2 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-white/90 shadow-lg flex items-center justify-center hover:bg-white transition-colors"
-                  >
-                    <ChevronRight className="w-5 h-5 text-slate-700" />
-                  </button>
-                )}
+              {/* Cleaning in Minutes Banner */}
+              <div className="bg-white/10 backdrop-blur-xl rounded-2xl border border-white/15 p-3 sm:p-5 md:p-8">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-8">
+                  {/* Left — Tagline */}
+                  <div className="flex-shrink-0 max-w-sm">
+                    <div className="flex items-center gap-2 mb-1 md:mb-2">
+                      <Sparkles className="w-3.5 h-3.5 md:w-4 md:h-4 text-emerald-400" />
+                      <span className="text-emerald-400 text-[10px] md:text-xs font-bold tracking-[0.15em] uppercase">
+                        Fast & Reliable
+                      </span>
+                    </div>
+                    <h3 className="text-lg sm:text-xl md:text-3xl font-bold text-white leading-snug">
+                      Sparkling Clean, <span className="text-emerald-400">In Minutes.</span>
+                    </h3>
+                    <p className="hidden sm:block text-white/50 text-xs sm:text-sm mt-2 leading-relaxed">
+                      Book a verified professional and get your home cleaned — fast, easy, no hassle.
+                    </p>
+                  </div>
 
-                {/* Scrollable Cards */}
-                <div
-                  ref={scrollRef}
-                  className="flex gap-3 md:gap-4 overflow-x-auto pb-2 scrollbar-hide"
-                  style={{
-                    scrollbarWidth: "none",
-                    msOverflowStyle: "none",
-                  }}
-                >
-                  {services.map((service, index) => (
-                    <Link
-                      to={`/services/${service.slug}`}
-                      key={index}
-                      className="group flex-shrink-0 w-[120px] sm:w-[140px] md:w-[170px] lg:w-[190px] cursor-pointer"
-                    >
-                      <div className="relative bg-white/15 backdrop-blur-md rounded-2xl overflow-hidden border border-white/20 hover:border-white/40 transition-all duration-300 hover:bg-white/25">
-                        {/* Card Image */}
-                        <div className="aspect-square overflow-hidden">
-                          <img
-                            src={service.image}
-                            alt={service.name}
-                            className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
-                          />
-                        </div>
-
-                        {/* Card Footer */}
-                        <div className="flex items-center justify-between px-3 py-2.5">
-                          <span className="text-white text-xs md:text-sm font-semibold truncate">
-                            {service.name}
-                          </span>
-                          <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 group-hover:bg-white/40 transition-colors">
-                            <ArrowRight className="w-3 h-3 text-white" />
-                          </div>
-                        </div>
+                  {/* Right — Stat Cards */}
+                  <div className="flex flex-nowrap gap-2 sm:gap-3 md:gap-4 flex-1 md:justify-end">
+                    {/* Card 1 */}
+                    <div className="flex-1 bg-white/10 backdrop-blur-md rounded-xl border border-white/10 p-2 sm:p-3 md:p-4 text-center hover:bg-white/15 hover:border-white/25 transition-all duration-300 group">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-emerald-500/20 flex items-center justify-center mx-auto mb-1.5 sm:mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <Clock className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-emerald-400" />
                       </div>
-                    </Link>
-                  ))}
+                      <div className="text-base sm:text-xl md:text-2xl font-bold text-white mb-0.5">60s</div>
+                      <div className="text-white/50 text-[9px] sm:text-[10px] md:text-xs font-medium">Book in Sec</div>
+                    </div>
+
+                    {/* Card 2 */}
+                    <div className="flex-1 bg-white/10 backdrop-blur-md rounded-xl border border-white/10 p-2 sm:p-3 md:p-4 text-center hover:bg-white/15 hover:border-white/25 transition-all duration-300 group">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-emerald-500/20 flex items-center justify-center mx-auto mb-1.5 sm:mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-emerald-400" />
+                      </div>
+                      <div className="text-base sm:text-xl md:text-2xl font-bold text-white mb-0.5">10 min</div>
+                      <div className="text-white/50 text-[9px] sm:text-[10px] md:text-xs font-medium">Arrive in Minutes</div>
+                    </div>
+
+                    {/* Card 3 */}
+                    <div className="flex-1 bg-white/10 backdrop-blur-md rounded-xl border border-white/10 p-2 sm:p-3 md:p-4 text-center hover:bg-white/15 hover:border-white/25 transition-all duration-300 group">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-emerald-500/20 flex items-center justify-center mx-auto mb-1.5 sm:mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-emerald-400" />
+                      </div>
+                      <div className="text-base sm:text-xl md:text-2xl font-bold text-white mb-0.5">100%</div>
+                      <div className="text-white/50 text-[9px] sm:text-[10px] md:text-xs font-medium">Satisfaction</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* ── Pronto-Style Services Grid ── */}
+        <div className="mt-12 md:mt-20">
+          {/* Headline */}
+          <div className="mb-8 md:mb-12 max-w-xl">
+            <span
+              className="inline-block text-xs md:text-sm font-bold tracking-[0.2em] uppercase mb-3 md:mb-4"
+              style={{ color: "#3D7B52", letterSpacing: "0.2em" }}
+            >
+              OUR SERVICES
+            </span>
+            <h2
+              className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4"
+              style={{ color: "#1a1a1a" }}
+            >
+              Book trusted house
+              <br />
+              help.
+            </h2>
+            <p className="text-slate-500 text-sm md:text-base leading-relaxed">
+              From hourly bookings to express cleans to daily upkeep, Workra's
+              got you covered.{" "}
+              <span className="font-semibold text-slate-700">
+                {services.length} services
+              </span>
+              , transparent flat pricing.
+            </p>
+          </div>
+
+          {/* Services Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 md:gap-4">
+            {services.map((service, index) => (
+              <Link
+                to={`/services/${service.slug}`}
+                key={index}
+                className="group cursor-pointer"
+                style={{
+                  opacity: 0,
+                  animation: `fadeInUp 0.5s ease-out forwards`,
+                  animationDelay: `${index * 60}ms`,
+                }}
+              >
+                <div className="bg-[#f5f5f5] rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-[#efefef]">
+                  {/* Card Image */}
+                  <div className="aspect-square p-3 md:p-4 flex items-center justify-center">
+                    <img
+                      src={service.image}
+                      alt={service.name}
+                      className="w-full h-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+
+                  {/* Card Footer */}
+                  <div className="px-3 md:px-4 pb-3 md:pb-4">
+                    <h3
+                      className="text-xs sm:text-sm font-bold leading-tight mb-1.5"
+                      style={{ color: "#1a3a2a" }}
+                    >
+                      {service.name}
+                    </h3>
+                    <div className="flex items-center gap-1 text-slate-400 group-hover:text-[#3D7B52] transition-colors">
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </div>
