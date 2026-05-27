@@ -10,6 +10,7 @@ import {
   CheckCircle2,
   Clock,
   Phone,
+  Sparkles,
 } from "lucide-react";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
@@ -440,6 +441,61 @@ export const ServiceDetailPage = () => {
                 />
                 {/* Subtle gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cleaning in Minutes Stats Strip */}
+      <section className="py-8 md:py-14 bg-white">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
+          <div className="bg-gradient-to-br from-[#1a3a2a] to-[#2d5e33] rounded-2xl md:rounded-3xl p-5 sm:p-8 md:p-10">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5 md:gap-10">
+              {/* Left — Tagline */}
+              <div className="flex-shrink-0 max-w-sm">
+                <div className="flex items-center gap-2 mb-1 md:mb-2">
+                  <Sparkles className="w-3.5 h-3.5 md:w-4 md:h-4 text-emerald-400" />
+                  <span className="text-emerald-400 text-[10px] md:text-xs font-bold tracking-[0.15em] uppercase">
+                    Fast & Reliable
+                  </span>
+                </div>
+                <h3 className="text-lg sm:text-xl md:text-3xl font-bold text-white leading-snug">
+                  Sparkling Clean, <span className="text-emerald-400">In Minutes.</span>
+                </h3>
+                <p className="hidden sm:block text-white/50 text-xs sm:text-sm mt-2 leading-relaxed">
+                  Book a verified professional and get your home cleaned — fast, easy, no hassle.
+                </p>
+              </div>
+
+              {/* Right — Stat Cards */}
+              <div className="flex flex-nowrap gap-2 sm:gap-3 md:gap-4 flex-1 md:justify-end">
+                {/* Card 1 */}
+                <div className="flex-1 max-w-[180px] bg-white/10 backdrop-blur-md rounded-xl border border-white/10 p-2 sm:p-3 md:p-4 text-center hover:bg-white/15 hover:border-white/25 transition-all duration-300 group">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-emerald-500/20 flex items-center justify-center mx-auto mb-1.5 sm:mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">
+                    <Clock className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-emerald-400" />
+                  </div>
+                  <div className="text-base sm:text-xl md:text-2xl font-bold text-white mb-0.5">60s</div>
+                  <div className="text-white/50 text-[9px] sm:text-[10px] md:text-xs font-medium">Book in Sec</div>
+                </div>
+
+                {/* Card 2 */}
+                <div className="flex-1 max-w-[180px] bg-white/10 backdrop-blur-md rounded-xl border border-white/10 p-2 sm:p-3 md:p-4 text-center hover:bg-white/15 hover:border-white/25 transition-all duration-300 group">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-emerald-500/20 flex items-center justify-center mx-auto mb-1.5 sm:mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">
+                    <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-emerald-400" />
+                  </div>
+                  <div className="text-base sm:text-xl md:text-2xl font-bold text-white mb-0.5">10 min</div>
+                  <div className="text-white/50 text-[9px] sm:text-[10px] md:text-xs font-medium">Arrive in Minutes</div>
+                </div>
+
+                {/* Card 3 */}
+                <div className="flex-1 max-w-[180px] bg-white/10 backdrop-blur-md rounded-xl border border-white/10 p-2 sm:p-3 md:p-4 text-center hover:bg-white/15 hover:border-white/25 transition-all duration-300 group">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-emerald-500/20 flex items-center justify-center mx-auto mb-1.5 sm:mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">
+                    <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-emerald-400" />
+                  </div>
+                  <div className="text-base sm:text-xl md:text-2xl font-bold text-white mb-0.5">100%</div>
+                  <div className="text-white/50 text-[9px] sm:text-[10px] md:text-xs font-medium">Satisfaction</div>
+                </div>
               </div>
             </div>
           </div>
