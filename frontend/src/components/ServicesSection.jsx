@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Clock, Sparkles, ShieldCheck } from "lucide-react";
 
@@ -35,16 +35,49 @@ const services = [
 ];
 
 export const ServicesSection = () => {
+  // Inject ItemList JSON-LD structured data for services grid
+  useEffect(() => {
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Workra Home Services",
+      "description": "Book trusted house help — from hourly bookings to express cleans to daily upkeep. 13 services with transparent flat pricing.",
+      "numberOfItems": services.length,
+      "itemListElement": services.map((service, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": service.name,
+        "url": `https://useworkra.com/services/${service.slug}`,
+      })),
+    };
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.textContent = JSON.stringify(jsonLd);
+    script.id = "services-itemlist-jsonld";
+    // Avoid duplicates
+    const existing = document.getElementById("services-itemlist-jsonld");
+    if (existing) existing.remove();
+    document.head.appendChild(script);
+    return () => {
+      const el = document.getElementById("services-itemlist-jsonld");
+      if (el) el.remove();
+    };
+  }, []);
+
   return (
-    <section className="py-8 md:py-14 px-4 md:px-8 lg:px-16">
+    <section
+      className="py-8 md:py-14 px-4 md:px-8 lg:px-16"
+      aria-label="Home cleaning and repair services"
+    >
       <div className="max-w-[1400px] mx-auto">
         {/* Main Card Container */}
         <div className="relative rounded-2xl md:rounded-3xl overflow-hidden min-h-[400px] sm:min-h-[480px] md:min-h-[600px] lg:min-h-[650px]">
           {/* Background Image */}
           <img
             src={girlcleaning}
-            alt="Home cleaning services"
+            alt="Professional home cleaning service by Workra in Patna — trusted house help for floor cleaning, bathroom cleaning, dusting and more"
             className="absolute inset-0 w-full h-full object-cover object-top"
+            loading="eager"
           />
 
           {/* Gradient Overlays */}
@@ -97,7 +130,11 @@ export const ServicesSection = () => {
               </div>
 
               {/* Cleaning in Minutes Banner */}
-              <div className="bg-white/10 backdrop-blur-xl rounded-2xl border border-white/15 p-3 sm:p-5 md:p-8">
+              <div
+                className="bg-white/10 backdrop-blur-xl rounded-2xl border border-white/15 p-3 sm:p-5 md:p-8"
+                role="region"
+                aria-label="Quick booking stats — book in 60 seconds, arrive in 10 minutes, 100% satisfaction"
+              >
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-8">
                   {/* Left — Tagline */}
                   <div className="flex-shrink-0 max-w-sm">
@@ -150,8 +187,8 @@ export const ServicesSection = () => {
           </div>
         </div>
 
-        {/* ── Pronto-Style Services Grid ── */}
-        <div className="mt-12 md:mt-20">
+        {/* ── Services Catalogue Grid ── */}
+        <div className="mt-12 md:mt-20" role="region" aria-label="Browse all home services">
           {/* Headline */}
           <div className="mb-8 md:mb-12 max-w-xl">
             <span
@@ -196,7 +233,8 @@ export const ServicesSection = () => {
                   <div className="aspect-square p-3 md:p-4 flex items-center justify-center">
                     <img
                       src={service.image}
-                      alt={service.name}
+                      alt={`${service.name} service in Patna — book on Workra`}
+                      loading="lazy"
                       className="w-full h-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>

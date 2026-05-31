@@ -436,7 +436,7 @@ export const ServiceDetailPage = () => {
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl shadow-black/10">
                 <img
                   src={service.image}
-                  alt={service.name}
+                  alt={`${service.name} service in Patna — professional ${service.name.toLowerCase()} by Workra`}
                   className="w-full h-full object-cover"
                 />
                 {/* Subtle gradient */}
@@ -448,7 +448,10 @@ export const ServiceDetailPage = () => {
       </section>
 
       {/* Cleaning in Minutes Stats Strip */}
-      <section className="py-8 md:py-14 bg-white">
+      <section
+        className="py-8 md:py-14 bg-white"
+        aria-label={`Fast and reliable ${service.name} booking — book in seconds, arrive in minutes`}
+      >
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16">
           <div className="bg-gradient-to-br from-[#1a3a2a] to-[#2d5e33] rounded-2xl md:rounded-3xl p-5 sm:p-8 md:p-10">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5 md:gap-10">
@@ -464,7 +467,7 @@ export const ServiceDetailPage = () => {
                   Sparkling Clean, <span className="text-emerald-400">In Minutes.</span>
                 </h3>
                 <p className="hidden sm:block text-white/50 text-xs sm:text-sm mt-2 leading-relaxed">
-                  Book a verified professional and get your home cleaned — fast, easy, no hassle.
+                  Book a verified {service.name.toLowerCase()} professional and get your home serviced — fast, easy, no hassle.
                 </p>
               </div>
 

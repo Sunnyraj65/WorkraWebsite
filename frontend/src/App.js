@@ -20,9 +20,23 @@ const LandingPage = () => {
     <div className="landing-page">
       <SEO
         title="Home Services in Patna – Book Plumber, Electrician, Cleaner"
-        description="Workra – India's first 0% commission home services platform. Book verified plumbers, electricians, carpenters & cleaners in Patna. AI-powered instant quotes."
+        description="Workra – India's first 0% commission home services platform. Book trusted house help in Patna: floor cleaning, bathroom cleaning, deep cleaning, AC repair, plumbing, carpentry & more. Book in 60 seconds, expert arrives in 10 minutes."
         path="/"
-        keywords="home services Patna, plumber Patna, electrician Patna, carpenter Patna, cleaning services Patna, AC repair Patna, Workra, book home services, 0% commission home services"
+        keywords="home services Patna, plumber Patna, electrician Patna, carpenter Patna, cleaning services Patna, AC repair Patna, Workra, book home services, 0% commission home services, house help Patna, floor cleaning Patna, bathroom cleaning Patna, deep cleaning Patna, dusting service Patna, utensil cleaning, glass cleaning, trusted house help, book cleaner online"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Workra – Home Services in Patna",
+          "description": "India's first 0% commission home services platform. Book trusted house help – floor cleaning, bathroom cleaning, deep cleaning, AC repair, plumbing, carpentry and more in Patna.",
+          "url": "https://useworkra.com/",
+          "isPartOf": { "@id": "https://useworkra.com/#website" },
+          "about": {
+            "@type": "Thing",
+            "name": "Home Services",
+            "description": "Professional home cleaning, repair and maintenance services in Patna, Bihar"
+          },
+          "specialty": "Home cleaning and repair services including floor cleaning, bathroom cleaning, deep cleaning, AC repair, plumbing, carpentry, wiring, and more"
+        }}
       />
       <Header />
       <HeroSection />
