@@ -30,13 +30,13 @@ export const HeroSection = () => {
           <div className="relative z-10">
             <h1 className="text-white leading-[1.15] animate-fade-in-up">
               <span className="font-sans text-4xl md:text-5xl lg:text-[4.5rem] font-semibold block">
-                India's First
+                Home help that
               </span>
               <span className="font-sans text-4xl md:text-5xl lg:text-[4.5rem] font-semibold block mt-1">
-                <span className="text-[#a8e6a3]">0% Commission</span>
+                arrives in
               </span>
               <span className="font-sans text-4xl md:text-5xl lg:text-[4.5rem] font-semibold block mt-1">
-                Home Services Platform
+                <span className="text-[#a8e6a3]">10 minutes!</span>
               </span>
             </h1>
             <p

@@ -1,7 +1,7 @@
 export const heroData = {
   title: "India's First 0% Commission",
   titleItalic: "Home Services Platform",
-  subtitle: "Don’t know the problem? Just chat. Our AI will figure it out and book the right expert.",
+  subtitle: "Book a verified cleaner in one tap and a trusted professional will be at your door in minutes.",
   stats: [
     { label: "Conversion Rate", value: "9.73%", icon: "play" },
     { label: "Todays Visitors", value: "17,640", change: "51%", icon: "globe" }
