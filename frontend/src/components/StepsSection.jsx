@@ -83,8 +83,9 @@ export const StepsSection = () => {
                 <div className="relative w-full">
                   <img
                     src={step.image}
-                    alt={`${step.step} UI`}
+                    alt={`Workra app ${step.step} - book home services in Patna`}
                     className="w-full h-auto object-cover object-top block"
+                    loading="lazy"
                     style={{
                       maskImage:
                         "linear-gradient(to bottom, black 90%, transparent 100%)",

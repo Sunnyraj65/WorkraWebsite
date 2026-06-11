@@ -35,7 +35,7 @@ const servicesData = {
   "floor-cleaning": {
     name: "Floor Cleaning",
     image: floorCleaning,
-    tagline: "Floor Cleaning Services Across India",
+    tagline: "Floor Cleaning Services in Patna",
     shortDesc:
       "Professional floor mopping, scrubbing & polishing for tiles, marble, wood and all types of flooring.",
     about:
@@ -53,7 +53,7 @@ const servicesData = {
   "glass-cleaning": {
     name: "Glass Cleaning",
     image: glassCleaning,
-    tagline: "Glass Cleaning Services Across India",
+    tagline: "Glass Cleaning Services in Patna",
     shortDesc:
       "Crystal-clear cleaning for windows, mirrors, glass doors, partitions and all glass surfaces.",
     about:
@@ -71,7 +71,7 @@ const servicesData = {
   "utensil-cleaning": {
     name: "Utensil Cleaning",
     image: utensilCleaning,
-    tagline: "Utensil Cleaning Services Across India",
+    tagline: "Utensil Cleaning Services in Patna",
     shortDesc:
       "Thorough cleaning and scrubbing of all kitchen utensils, pots, pans and cookware.",
     about:
@@ -89,7 +89,7 @@ const servicesData = {
   "bathroom-cleaning": {
     name: "Bathroom Cleaning",
     image: bathroomCleaning,
-    tagline: "Bathroom Cleaning Services Across India",
+    tagline: "Bathroom Cleaning Services in Patna",
     shortDesc:
       "Deep sanitization and scrubbing of toilets, tiles, fixtures, mirrors and entire bathroom.",
     about:
@@ -107,7 +107,7 @@ const servicesData = {
   "deep-cleaning": {
     name: "Deep Cleaning",
     image: deepCleaning,
-    tagline: "Deep Cleaning Services Across India",
+    tagline: "Deep Cleaning Services in Patna",
     shortDesc:
       "Complete home deep cleaning and sanitization — every room, corner and surface covered.",
     about:
@@ -125,7 +125,7 @@ const servicesData = {
   dusting: {
     name: "Dusting",
     image: dusting,
-    tagline: "Dusting Services Across India",
+    tagline: "Dusting Services in Patna",
     shortDesc:
       "Thorough dusting of all surfaces, furniture, shelves, fans, fixtures and hard-to-reach areas.",
     about:
@@ -143,7 +143,7 @@ const servicesData = {
   "ac-repair": {
     name: "AC Repair",
     image: acRepair,
-    tagline: "AC Repair & Service Across India",
+    tagline: "AC Repair & Service in Patna",
     shortDesc:
       "Expert AC installation, repair, gas refilling and annual maintenance for all brands.",
     about:
@@ -161,7 +161,7 @@ const servicesData = {
   carpenter: {
     name: "Carpenter",
     image: carpenter,
-    tagline: "Carpentry Services Across India",
+    tagline: "Carpentry Services in Patna",
     shortDesc:
       "Skilled carpenters for furniture repair, assembly, custom woodwork and door/window fixes.",
     about:
@@ -179,7 +179,7 @@ const servicesData = {
   "equipment-repair": {
     name: "Equipment Repair",
     image: equipmentRepair,
-    tagline: "Equipment Repair Services Across India",
+    tagline: "Equipment Repair Services in Patna",
     shortDesc:
       "Fix and maintain all household appliances, equipment and electronic devices.",
     about:
@@ -197,7 +197,7 @@ const servicesData = {
   plumbing: {
     name: "Plumbing",
     image: plumbing,
-    tagline: "Plumbing Services Across India",
+    tagline: "Plumbing Services in Patna",
     shortDesc:
       "Leak fixes, pipe fitting, tap repair, drain cleaning and complete plumbing solutions.",
     about:
@@ -215,7 +215,7 @@ const servicesData = {
   "socket-repair": {
     name: "Socket Repair",
     image: socketRepair,
-    tagline: "Socket & Switch Repair Across India",
+    tagline: "Socket & Switch Repair in Patna",
     shortDesc:
       "Switch and socket installation, repair, replacement and electrical safety checks.",
     about:
@@ -233,7 +233,7 @@ const servicesData = {
   "window-cleaning": {
     name: "Window Cleaning",
     image: windowCleaning,
-    tagline: "Window Cleaning Services Across India",
+    tagline: "Window Cleaning Services in Patna",
     shortDesc:
       "Window cleaning for glass panes, frames, grills and sills, inside and reachable outside.",
     about:
@@ -251,7 +251,7 @@ const servicesData = {
   wiring: {
     name: "Wiring",
     image: wiring,
-    tagline: "Electrical Wiring Services Across India",
+    tagline: "Electrical Wiring Services in Patna",
     shortDesc:
       "Complete electrical wiring, rewiring, circuit setup and safety inspections for your home.",
     about:
@@ -547,8 +547,9 @@ export const ServiceDetailPage = () => {
                   <div className="relative rounded-2xl overflow-hidden aspect-[3/2] mb-1">
                     <img
                       src={s.image}
-                      alt={s.name}
+                      alt={`${s.name} service in Patna by Workra`}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                     <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">

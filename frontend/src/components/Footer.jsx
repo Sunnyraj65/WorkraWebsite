@@ -74,7 +74,7 @@ export const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="#"
+                  href="mailto:careers@workra.com"
                   className="text-white font-medium hover:text-[#00C885] hover:bg-white/10 px-3 py-1 -ml-3 rounded-lg transition-all"
                 >
                   Careers
@@ -90,7 +90,9 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://wa.me/919334132209?text=Hi%2C%20I%20want%20to%20become%20a%20Workra%20professional"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white font-medium hover:text-[#00C885] hover:bg-white/10 px-3 py-1 -ml-3 rounded-lg transition-all"
                 >
                   Become a Workra Professional
@@ -106,12 +108,12 @@ export const Footer = () => {
             </h3>
             <ul className="space-y-4">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/privacy-policy"
                   className="text-white font-medium hover:text-[#00C885] hover:bg-white/10 px-3 py-1 -ml-3 rounded-lg transition-all"
                 >
                   Terms & Conditions
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
@@ -132,7 +134,9 @@ export const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="#"
+                  href="https://wa.me/919334132209"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white font-medium hover:text-[#00C885] hover:bg-white/10 px-3 py-1 -ml-3 rounded-lg transition-all"
                 >
                   Contact Us

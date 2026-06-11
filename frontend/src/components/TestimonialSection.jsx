@@ -30,10 +30,10 @@ export const TestimonialSection = () => {
             <div className="mt-12 flex items-center gap-8 flex-wrap">
               <span className="flex items-center gap-1.5 text-zinc-400 text-sm font-semibold">
                 <span className="w-4 h-4 rounded-full border-2 border-zinc-300 inline-block" />
-                Amsterdam
+                Patna, Bihar
               </span>
-              <span className="text-zinc-400 text-sm font-semibold">venice.</span>
-              <span className="text-zinc-400 text-lg italic font-serif">theo</span>
+              <span className="text-zinc-400 text-sm font-semibold">4.8★ Rated</span>
+              <span className="text-zinc-400 text-sm font-semibold">2,500+ Services</span>
             </div>
           </div>
 
@@ -42,8 +42,9 @@ export const TestimonialSection = () => {
             <div className="rounded-2xl overflow-hidden aspect-[3/4] max-h-[600px]">
               <img
                 src={testimonialData.image}
-                alt={`${testimonialData.author} testimonial`}
+                alt={`${testimonialData.author} testimonial - Workra home services Patna`}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>

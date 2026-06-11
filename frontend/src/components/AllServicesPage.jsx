@@ -170,8 +170,9 @@ export const AllServicesPage = () => {
               <div className="relative rounded-2xl overflow-hidden aspect-[4/5] max-h-[420px] shadow-2xl shadow-black/20">
                 <img
                   src={girlcleaning}
-                  alt="Professional home cleaning"
+                  alt="Professional home cleaning service in Patna by Workra"
                   className="w-full h-full object-cover object-top"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/15 to-transparent pointer-events-none" />
               </div>
@@ -214,8 +215,9 @@ export const AllServicesPage = () => {
                   <div className="relative aspect-[3/4] sm:aspect-[4/5] overflow-hidden">
                     <img
                       src={service.image}
-                      alt={service.name}
+                      alt={`${service.name} service in Patna by Workra`}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      loading="lazy"
                     />
                     {/* Overlay on hover */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

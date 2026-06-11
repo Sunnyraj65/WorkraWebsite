@@ -82,7 +82,7 @@ export const dashboardData = {
 
 export const footerData = {
   description: "Workra is India's first 0% commission home services platform. Book verified plumbers, electricians, carpenters, and cleaners in Patna.",
-  copyright: "© 2025 Workra. All rights reserved.",
+  copyright: "© 2026 Workra. All rights reserved.",
   pages: [
     { label: "Services", href: "#" },
     { label: "Download App", href: "https://play.google.com/store/apps/details?id=com.workra.mobile" },

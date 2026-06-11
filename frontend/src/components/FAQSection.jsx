@@ -57,7 +57,7 @@ export const FAQSection = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-white" aria-label="Frequently asked questions about Workra home services in Patna">
       <div className="max-w-3xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-12">
           Frequently Asked Questions

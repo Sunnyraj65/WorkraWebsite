@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import { SEO } from "./components/SEO";
 import { Header } from "./components/Header";
@@ -69,6 +69,7 @@ function App() {
           <Route path="/delete-account" element={<DeleteAccount />} />
           <Route path="/all-services" element={<AllServicesPage />} />
           <Route path="/services/:serviceSlug" element={<ServiceDetailPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
     </div>

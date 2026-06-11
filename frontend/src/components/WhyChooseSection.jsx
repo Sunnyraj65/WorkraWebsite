@@ -61,8 +61,9 @@ export const WhyChooseSection = () => {
               <div className="w-full aspect-square mb-4 md:mb-6 rounded-xl md:rounded-[1.5rem] overflow-hidden bg-gray-50 flex items-center justify-center p-4 md:p-6 group-hover:scale-105 transition-transform duration-500">
                 <img
                   src={feature.image}
-                  alt={feature.title}
+                  alt={`${feature.title} - Workra home services Patna`}
                   className="w-full h-full object-contain"
+                  loading="lazy"
                 />
               </div>
 
