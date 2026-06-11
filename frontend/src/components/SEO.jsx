@@ -58,7 +58,7 @@ export const SEO = ({
 }) => {
   const fullTitle = title
     ? `${title} | Workra`
-    : "Workra – India's First 0% Commission Home Services Platform";
+    : "Workra – House Help at Your Door in Minutes";
   const canonicalUrl = `${SITE_URL}${path}`;
   const metaDescription =
     description ||

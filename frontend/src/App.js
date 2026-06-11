@@ -20,22 +20,22 @@ const LandingPage = () => {
     <div className="landing-page">
       <SEO
         title="Home Services in Patna – Book Plumber, Electrician, Cleaner"
-        description="Workra – India's first 0% commission home services platform. Book trusted house help in Patna: floor cleaning, bathroom cleaning, deep cleaning, AC repair, plumbing, carpentry & more. Book in 60 seconds, expert arrives in 10 minutes."
+        description="From cleaning to repairs — Workra brings trusted, verified house help to your doorstep in Patna. Book in 60 seconds, expert arrives in 10 minutes. 0% commission."
         path="/"
-        keywords="home services Patna, plumber Patna, electrician Patna, carpenter Patna, cleaning services Patna, AC repair Patna, Workra, book home services, 0% commission home services, house help Patna, floor cleaning Patna, bathroom cleaning Patna, deep cleaning Patna, dusting service Patna, utensil cleaning, glass cleaning, trusted house help, book cleaner online"
+        keywords="cleaning service in Patna, cleaning services Patna, home cleaning Patna, best cleaning service Patna, book cleaner Patna, floor cleaning Patna, bathroom cleaning Patna, deep cleaning Patna, home services Patna, plumber Patna, electrician Patna, carpenter Patna, AC repair Patna, Workra, house help Patna, cleaning company Patna, maid service Patna"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Workra – Home Services in Patna",
-          "description": "India's first 0% commission home services platform. Book trusted house help – floor cleaning, bathroom cleaning, deep cleaning, AC repair, plumbing, carpentry and more in Patna.",
+          "description": "From cleaning to repairs — Workra brings trusted, verified house help to your doorstep in Patna. Book in 60 seconds, expert arrives in 10 minutes. 0% commission.",
           "url": "https://useworkra.com/",
           "isPartOf": { "@id": "https://useworkra.com/#website" },
           "about": {
             "@type": "Thing",
             "name": "Home Services",
-            "description": "Professional home cleaning, repair and maintenance services in Patna, Bihar"
+            "description": "Professional home cleaning, repair and maintenance services in Patna, Bihar — including floor cleaning, bathroom cleaning, deep cleaning, plumbing, electrical work and carpentry."
           },
-          "specialty": "Home cleaning and repair services including floor cleaning, bathroom cleaning, deep cleaning, AC repair, plumbing, carpentry, wiring, and more"
+          "specialty": "Home cleaning and repair services including floor cleaning, bathroom cleaning, deep cleaning, AC repair, plumbing, carpentry, wiring, and more in Patna"
         }}
       />
       <Header />
