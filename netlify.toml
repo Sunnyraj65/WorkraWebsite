@@ -8,6 +8,12 @@
   to = "/index.html"
   status = 200
 
+# ── SEO Pre-rendering Edge Function ──
+# Runs on every request to inject correct <title>, <meta>, <canonical>
+# per route so Google indexes each page properly.
+[[edge_functions]]
+  function = "seo-prerender"
+  path = "/*"
 
 # Security & Performance Headers
 [[headers]]
