@@ -58,11 +58,11 @@ export const SEO = ({
 }) => {
   const fullTitle = title
     ? `${title} | Workra`
-    : "Workra – House Help at Your Door in Minutes";
+    : "Workra – House Help at Your Door in Minutes in Patna";
   const canonicalUrl = `${SITE_URL}${path}`;
   const metaDescription =
     description ||
-    "Workra – India's first 0% commission home services platform. Book verified plumbers, electricians, carpenters & cleaners in Patna.";
+    "Cleaning services in minutes. AI-powered bookings, verified experts, and India's first 0% commission platform for service providers";
 
   useEffect(() => {
     // Title
