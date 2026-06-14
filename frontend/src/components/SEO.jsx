@@ -77,7 +77,7 @@ export const SEO = ({
     // Open Graph
     setMeta("property", "og:type", type);
     setMeta("property", "og:url", canonicalUrl);
-    setMeta("property", "og:title", fullTitle);
+    setMeta("property", "og:title", fullTitle); 
     setMeta("property", "og:description", metaDescription);
     setMeta("property", "og:image", image);
     setMeta("property", "og:site_name", "Workra");
