@@ -19,7 +19,7 @@ const SEO_DATA = {
   "/": {
     title: "Workra – House Help at Your Door in Minutes",
     description:
-      "From cleaning to repairs — Workra brings trusted, verified house help to your doorstep in Patna. Book in 60 seconds, expert arrives in 10 minutes. 0% commission.",
+      "Workra is Patna's smartest home services platform. Book verified plumbers, electricians, carpenters, and cleaners — powered by AI for instant quotes and hassle-free bookings.",
   },
   "/all-services": {
     title:
