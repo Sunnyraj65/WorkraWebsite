@@ -41,6 +41,17 @@ export const Footer = () => {
               </span>
             </a>
             <a
+              href="https://wa.me/916205683473"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-8 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full transition-all duration-300 backdrop-blur-sm group"
+            >
+              <WhatsAppIcon className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
+              <span className="text-white font-medium tracking-wide">
+                +91 62056 83473
+              </span>
+            </a>
+            <a
               href="https://wa.me/919334132209"
               target="_blank"
               rel="noopener noreferrer"
@@ -48,18 +59,7 @@ export const Footer = () => {
             >
               <WhatsAppIcon className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
               <span className="text-white font-medium tracking-wide">
-                +91 70507 01478
-              </span>
-            </a>
-            <a
-              href="https://wa.me/919798105359"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-8 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full transition-all duration-300 backdrop-blur-sm group"
-            >
-              <WhatsAppIcon className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
-              <span className="text-white font-medium tracking-wide">
-                +91 97981 05359
+                +91 93341 32209
               </span>
             </a>
           </div>
@@ -90,7 +90,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://wa.me/919334132209?text=Hi%2C%20I%20want%20to%20become%20a%20Workra%20professional"
+                  href="https://wa.me/916205683473?text=Hi%2C%20I%20want%20to%20become%20a%20Workra%20professional"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white font-medium hover:text-[#00C885] hover:bg-white/10 px-3 py-1 -ml-3 rounded-lg transition-all"
@@ -134,7 +134,7 @@ export const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="https://wa.me/919334132209"
+                  href="https://wa.me/916205683473"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white font-medium hover:text-[#00C885] hover:bg-white/10 px-3 py-1 -ml-3 rounded-lg transition-all"

@@ -347,23 +347,23 @@ export const Header = () => {
             </a>
 
             <a
+              href="https://wa.me/916205683473"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#45844b]/10 text-[#45844b] rounded-xl font-semibold text-sm hover:bg-[#45844b]/15 transition-colors"
+            >
+              <WhatsAppIcon className="w-4 h-4" />
+              +91 62056 83473
+            </a>
+
+            <a
               href="https://wa.me/919334132209"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#45844b]/10 text-[#45844b] rounded-xl font-semibold text-sm hover:bg-[#45844b]/15 transition-colors"
             >
               <WhatsAppIcon className="w-4 h-4" />
-              +91 70507 01478
-            </a>
-
-            <a
-              href="https://wa.me/918210978263"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#45844b]/10 text-[#45844b] rounded-xl font-semibold text-sm hover:bg-[#45844b]/15 transition-colors"
-            >
-              <WhatsAppIcon className="w-4 h-4" />
-              +91 821 097 8263
+              +91 93341 32209
             </a>
           </div>
         </nav>

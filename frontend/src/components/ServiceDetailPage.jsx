@@ -660,7 +660,7 @@ export const ServiceDetailPage = () => {
               Google Play
             </a>
             <a
-              href="https://wa.me/919334132209"
+              href="https://wa.me/916205683473"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-7 py-3.5 bg-white/10 border border-white/20 text-white rounded-xl font-semibold text-sm hover:bg-white/20 transition-all duration-300"
