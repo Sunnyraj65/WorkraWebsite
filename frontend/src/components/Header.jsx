@@ -25,6 +25,7 @@ const serviceCategories = [
       { name: "Utensil Cleaning", slug: "utensil-cleaning" },
       { name: "Bathroom Cleaning", slug: "bathroom-cleaning" },
       { name: "Deep Cleaning", slug: "deep-cleaning" },
+      { name: "Sofa Cleaning", slug: "sofa-cleaning" },
       { name: "Dusting", slug: "dusting" },
       { name: "Window Cleaning", slug: "window-cleaning" },
     ],

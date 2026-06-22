@@ -17,6 +17,7 @@ import glassCleaning from "../assets/glass cleaning.png";
 import utensilCleaning from "../assets/utensil cleaning.png";
 import bathroomCleaning from "../assets/bathroom cleaning.png";
 import deepCleaning from "../assets/deep cleaning.png";
+import sofaCleaning from "../assets/sofa cleaning.png";
 
 const services = [
   { name: "Floor Cleaning", image: floorCleaning, slug: "floor-cleaning" },
@@ -24,6 +25,7 @@ const services = [
   { name: "Utensil Cleaning", image: utensilCleaning, slug: "utensil-cleaning" },
   { name: "Bathroom Cleaning", image: bathroomCleaning, slug: "bathroom-cleaning" },
   { name: "Deep Cleaning", image: deepCleaning, slug: "deep-cleaning" },
+  { name: "Sofa Cleaning", image: sofaCleaning, slug: "sofa-cleaning" },
   { name: "Dusting", image: dusting, slug: "dusting" },
   { name: "AC Repair", image: acRepair, slug: "ac-repair" },
   { name: "Carpenter", image: carpenter, slug: "carpenter" },

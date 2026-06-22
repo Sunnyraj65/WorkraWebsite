@@ -55,6 +55,12 @@ const SEO_DATA = {
     description:
       "Complete home deep cleaning and sanitization — every room, corner and surface covered. Book verified deep cleaning experts in Patna with Workra. 0% commission.",
   },
+  "/services/sofa-cleaning": {
+    title:
+      "Sofa Cleaning in Patna – Book Sofa Cleaning Service Online | Workra",
+    description:
+      "Professional sofa & upholstery cleaning with deep steam extraction for fabric, leather and all sofa types. Book verified sofa cleaning experts in Patna with Workra. 0% commission.",
+  },
   "/services/dusting": {
     title: "Dusting Service in Patna – Book Dusting Service Online | Workra",
     description:

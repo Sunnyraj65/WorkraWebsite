@@ -20,6 +20,7 @@ import glassCleaning from "../assets/glass cleaning.png";
 import utensilCleaning from "../assets/utensil cleaning.png";
 import bathroomCleaning from "../assets/bathroom cleaning.png";
 import deepCleaning from "../assets/deep cleaning.png";
+import sofaCleaning from "../assets/sofa cleaning.png";
 
 const allServices = [
   {
@@ -51,6 +52,12 @@ const allServices = [
     image: deepCleaning,
     slug: "deep-cleaning",
     description: "Complete home deep cleaning & sanitization",
+  },
+  {
+    name: "Sofa Cleaning",
+    image: sofaCleaning,
+    slug: "sofa-cleaning",
+    description: "Professional sofa & upholstery deep steam cleaning",
   },
   {
     name: "Dusting",

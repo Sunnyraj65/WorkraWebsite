@@ -30,6 +30,7 @@ import glassCleaning from "../assets/glass cleaning.png";
 import utensilCleaning from "../assets/utensil cleaning.png";
 import bathroomCleaning from "../assets/bathroom cleaning.png";
 import deepCleaning from "../assets/deep cleaning.png";
+import sofaCleaning from "../assets/sofa cleaning.png";
 
 const servicesData = {
   "floor-cleaning": {
@@ -120,6 +121,24 @@ const servicesData = {
       "Complete sanitization included",
     ],
     duration: "4-8 hours",
+    category: "House Help",
+  },
+  "sofa-cleaning": {
+    name: "Sofa Cleaning",
+    image: sofaCleaning,
+    tagline: "Sofa Cleaning Services in Patna",
+    shortDesc:
+      "Professional sofa & upholstery cleaning with deep steam extraction for fabric, leather and all sofa types.",
+    about:
+      "Your sofa collects dust, stains, allergens, and odours over time — regular vacuuming isn't enough. Our professional sofa cleaning service uses hot-water extraction and steam cleaning technology to deep-clean every fibre of your sofa. We handle fabric, leather, rexine, and microfibre upholstery with the right technique and safe cleaning agents. Stubborn stains, pet hair, food spills, and embedded dirt are no match for our trained professionals. Your sofa will look, feel, and smell as good as new.",
+    highlights: [
+      "Fabric, leather & rexine sofas",
+      "Hot-water extraction & steam cleaning",
+      "Stain & odour removal",
+      "Pet hair & allergen deep clean",
+      "Safe, eco-friendly cleaning agents",
+    ],
+    duration: "1-3 hours",
     category: "House Help",
   },
   dusting: {
