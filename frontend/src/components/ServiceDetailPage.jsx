@@ -50,6 +50,7 @@ const servicesData = {
     ],
     duration: "1-3 hours",
     category: "House Help",
+    price: 129,
   },
   "glass-cleaning": {
     name: "Glass Cleaning",
@@ -68,6 +69,7 @@ const servicesData = {
     ],
     duration: "1-2 hours",
     category: "House Help",
+    price: 129,
   },
   "utensil-cleaning": {
     name: "Utensil Cleaning",
@@ -86,6 +88,7 @@ const servicesData = {
     ],
     duration: "1-2 hours",
     category: "House Help",
+    price: 99,
   },
   "bathroom-cleaning": {
     name: "Bathroom Cleaning",
@@ -104,6 +107,7 @@ const servicesData = {
     ],
     duration: "1-2 hours",
     category: "House Help",
+    price: 179,
   },
   "deep-cleaning": {
     name: "Deep Cleaning",
@@ -122,6 +126,7 @@ const servicesData = {
     ],
     duration: "4-8 hours",
     category: "House Help",
+    price: 449,
   },
   "sofa-cleaning": {
     name: "Sofa Cleaning",
@@ -158,6 +163,7 @@ const servicesData = {
     ],
     duration: "1-3 hours",
     category: "House Help",
+    price: 169,
   },
   "ac-repair": {
     name: "AC Repair",
@@ -343,9 +349,9 @@ export const ServiceDetailPage = () => {
     <div className="min-h-screen bg-white">
       <SEO
         title={`${service.name} in Patna – Book ${service.name} Service Online`}
-        description={`${service.shortDesc} Book verified ${service.name.toLowerCase()} experts in Patna with Workra. 0% commission, background-verified professionals.`}
+        description={`${service.shortDesc}${service.price ? ` Starting at just ₹${service.price}.` : ''} Book verified ${service.name.toLowerCase()} experts in Patna with Workra. 0% commission, background-verified professionals.`}
         path={`/services/${serviceSlug}`}
-        keywords={`${service.name} Patna, ${service.name.toLowerCase()} service Patna, book ${service.name.toLowerCase()}, ${service.name.toLowerCase()} near me, Workra ${service.name.toLowerCase()}, home services Patna`}
+        keywords={`${service.name} Patna, ${service.name.toLowerCase()} service Patna, book ${service.name.toLowerCase()}, ${service.name.toLowerCase()} near me, Workra ${service.name.toLowerCase()}, home services Patna${service.price ? `, ${service.name.toLowerCase()} price Patna, cheap ${service.name.toLowerCase()} Patna` : ''}`}
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Service",
@@ -362,6 +368,25 @@ export const ServiceDetailPage = () => {
             "name": "Patna"
           },
           "serviceType": service.name,
+          ...(service.price && {
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": String(service.price),
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "priceCurrency": "INR",
+                "price": String(service.price),
+                "unitText": "session"
+              },
+              "availability": "https://schema.org/InStock",
+              "url": `https://useworkra.com/services/${serviceSlug}`,
+              "seller": {
+                "@type": "Organization",
+                "name": "Workra"
+              }
+            }
+          }),
           "breadcrumb": {
             "@type": "BreadcrumbList",
             "itemListElement": [
@@ -413,6 +438,16 @@ export const ServiceDetailPage = () => {
 
               {/* Trust Badges */}
               <div className="flex flex-wrap gap-2 sm:gap-3 mb-6 md:mb-8">
+                {service.price && (
+                  <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 bg-[#45844b] rounded-full">
+                    <span className="text-xs sm:text-sm font-semibold text-white/80">
+                      Starts at
+                    </span>
+                    <span className="text-sm sm:text-base font-extrabold text-white">
+                      ₹{service.price}
+                    </span>
+                  </div>
+                )}
                 <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 bg-[#45844b]/10 rounded-full">
                   <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#45844b]" />
                   <span className="text-xs sm:text-sm font-semibold text-[#45844b]">
@@ -605,6 +640,13 @@ export const ServiceDetailPage = () => {
 
               {/* Quick Info */}
               <div className="flex flex-wrap gap-4">
+                {service.price && (
+                  <div className="flex items-center gap-2.5 px-4 py-2.5 bg-white rounded-xl border border-[#45844b]/15 shadow-sm relative overflow-hidden">
+                    <div className="absolute left-0 top-1.5 bottom-1.5 w-0.5 rounded-full bg-gradient-to-b from-[#45844b] to-emerald-400"></div>
+                    <span className="text-sm text-slate-500 ml-1">From</span>
+                    <span className="text-base font-bold text-[#45844b]">₹{service.price}</span>
+                  </div>
+                )}
                 <div className="flex items-center gap-2 px-4 py-2.5 bg-white rounded-xl border border-slate-100">
                   <Clock className="w-4 h-4 text-[#45844b]" />
                   <span className="text-sm text-slate-600">

@@ -20,13 +20,13 @@ import deepCleaning from "../assets/deep cleaning.png";
 import sofaCleaning from "../assets/sofa cleaning.png";
 
 const services = [
-  { name: "Floor Cleaning", image: floorCleaning, slug: "floor-cleaning" },
-  { name: "Glass Cleaning", image: glassCleaning, slug: "glass-cleaning" },
-  { name: "Utensil Cleaning", image: utensilCleaning, slug: "utensil-cleaning" },
-  { name: "Bathroom Cleaning", image: bathroomCleaning, slug: "bathroom-cleaning" },
-  { name: "Deep Cleaning", image: deepCleaning, slug: "deep-cleaning" },
+  { name: "Floor Cleaning", image: floorCleaning, slug: "floor-cleaning", price: 129 },
+  { name: "Glass Cleaning", image: glassCleaning, slug: "glass-cleaning", price: 129 },
+  { name: "Utensil Cleaning", image: utensilCleaning, slug: "utensil-cleaning", price: 99 },
+  { name: "Bathroom Cleaning", image: bathroomCleaning, slug: "bathroom-cleaning", price: 179 },
+  { name: "Deep Cleaning", image: deepCleaning, slug: "deep-cleaning", price: 449 },
   { name: "Sofa Cleaning", image: sofaCleaning, slug: "sofa-cleaning" },
-  { name: "Dusting", image: dusting, slug: "dusting" },
+  { name: "Dusting", image: dusting, slug: "dusting", price: 169 },
   { name: "AC Repair", image: acRepair, slug: "ac-repair" },
   { name: "Carpenter", image: carpenter, slug: "carpenter" },
   { name: "Equipment Repair", image: equipmentRepair, slug: "equipment-repair" },
@@ -249,8 +249,18 @@ export const ServicesSection = () => {
                     >
                       {service.name}
                     </h3>
-                    <div className="flex items-center gap-1 text-slate-400 group-hover:text-[#3D7B52] transition-colors">
-                      <ArrowRight className="w-3.5 h-3.5" />
+                    <div className="flex items-center justify-between">
+                      {service.price ? (
+                        <div className="flex items-baseline gap-1">
+                          <span className="text-[10px] sm:text-xs text-slate-400 font-medium">From</span>
+                          <span className="text-sm sm:text-base font-extrabold text-[#3D7B52]">₹{service.price}</span>
+                        </div>
+                      ) : (
+                        <span></span>
+                      )}
+                      <div className="w-6 h-6 rounded-full bg-[#3D7B52]/8 flex items-center justify-center text-slate-400 group-hover:bg-[#3D7B52] group-hover:text-white transition-all duration-300">
+                        <ArrowRight className="w-3 h-3" />
+                      </div>
                     </div>
                   </div>
                 </div>
