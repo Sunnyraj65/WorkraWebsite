@@ -7,6 +7,7 @@
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false  # Serve pre-rendered files first; only fallback to index.html if no file exists
 
 # ── SEO Pre-rendering Edge Function ──
 # Runs on every request to inject correct <title>, <meta>, <canonical>
