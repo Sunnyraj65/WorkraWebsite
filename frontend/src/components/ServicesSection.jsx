@@ -20,7 +20,7 @@ import deepCleaning from "../assets/deep cleaning.png";
 import sofaCleaning from "../assets/sofa cleaning.png";
 
 const services = [
-  { name: "Floor Cleaning", image: floorCleaning, slug: "floor-cleaning", price: 129 },
+  { name: "House Cleaning", image: floorCleaning, slug: "house-cleaning", price: 129 },
   { name: "Glass Cleaning", image: glassCleaning, slug: "glass-cleaning", price: 129 },
   { name: "Utensil Cleaning", image: utensilCleaning, slug: "utensil-cleaning", price: 99 },
   { name: "Bathroom Cleaning", image: bathroomCleaning, slug: "bathroom-cleaning", price: 179 },

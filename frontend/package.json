@@ -74,7 +74,7 @@
     "include": [
       "/",
       "/all-services",
-      "/services/floor-cleaning",
+      "/services/house-cleaning",
       "/services/glass-cleaning",
       "/services/utensil-cleaning",
       "/services/bathroom-cleaning",

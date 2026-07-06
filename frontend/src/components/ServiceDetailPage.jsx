@@ -33,22 +33,22 @@ import deepCleaning from "../assets/deep cleaning.png";
 import sofaCleaning from "../assets/sofa cleaning.png";
 
 const servicesData = {
-  "floor-cleaning": {
-    name: "Floor Cleaning",
+  "house-cleaning": {
+    name: "House Cleaning",
     image: floorCleaning,
-    tagline: "Floor Cleaning Services in Patna",
+    tagline: "House Cleaning Services in Patna",
     shortDesc:
-      "Professional floor mopping, scrubbing & polishing for tiles, marble, wood and all types of flooring.",
+      "Complete house cleaning services — floors, rooms, kitchen, balcony and every corner of your home professionally cleaned.",
     about:
-      "A clean floor transforms your entire home. Our trained professionals use the right techniques and eco-friendly products to mop, scrub, and polish all types of flooring — from marble and tiles to hardwood and vinyl. Whether it's daily maintenance or a deep floor clean, we ensure spotless, streak-free results every time. Our experts arrive at your doorstep fully equipped and ready to work.",
+      "Our house cleaning service covers your entire home from top to bottom. Our trained professionals clean every room, hallway, kitchen, balcony and living space using the right techniques and eco-friendly products. From mopping and sweeping floors to wiping surfaces, dusting furniture, and organizing spaces — we handle it all. Whether it's a daily maid, weekly cleanup or a one-time full house clean, our verified helpers arrive at your doorstep fully equipped and ready to make your home spotless.",
     highlights: [
-      "All floor types — marble, tiles, wood, vinyl",
+      "Complete home cleaning — every room covered",
+      "Floors, kitchen, balcony & living spaces",
       "Eco-friendly cleaning products used",
-      "Streak-free, spotless finish",
-      "Daily or one-time deep cleaning available",
-      "Fully equipped professionals",
+      "Daily, weekly or one-time service available",
+      "Fully equipped, background-verified professionals",
     ],
-    duration: "1-3 hours",
+    duration: "2-4 hours",
     category: "House Help",
     price: 129,
   },

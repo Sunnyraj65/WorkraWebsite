@@ -27,10 +27,10 @@ const SEO_DATA = {
     description:
       "Browse all Workra home services in Patna: floor cleaning, bathroom cleaning, AC repair, plumbing, carpentry, wiring & more. 0% commission. Book verified experts now.",
   },
-  "/services/floor-cleaning": {
-    title: "Floor Cleaning in Patna – Book Floor Cleaning Service Online | Workra",
+  "/services/house-cleaning": {
+    title: "House Cleaning in Patna – Book House Cleaning Service Online | Workra",
     description:
-      "Professional floor mopping, scrubbing & polishing for tiles, marble, wood and all types of flooring. Book verified floor cleaning experts in Patna with Workra. 0% commission.",
+      "Complete house cleaning services — floors, rooms, kitchen, balcony and every corner of your home professionally cleaned. Book verified house cleaning experts in Patna with Workra. 0% commission.",
   },
   "/services/glass-cleaning": {
     title: "Glass Cleaning in Patna – Book Glass Cleaning Service Online | Workra",

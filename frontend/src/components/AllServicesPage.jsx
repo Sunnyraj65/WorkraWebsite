@@ -24,10 +24,10 @@ import sofaCleaning from "../assets/sofa cleaning.png";
 
 const allServices = [
   {
-    name: "Floor Cleaning",
+    name: "House Cleaning",
     image: floorCleaning,
-    slug: "floor-cleaning",
-    description: "Spotless floor mopping & polishing for every room",
+    slug: "house-cleaning",
+    description: "Complete house cleaning — every room, kitchen & balcony",
   },
   {
     name: "Glass Cleaning",

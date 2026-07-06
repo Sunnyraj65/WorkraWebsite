@@ -38,7 +38,7 @@ const HOMEPAGE_SCHEMAS = [
       "@type": "OfferCatalog", "name": "Home Services",
       "itemListElement": [
         { "@type": "OfferCatalog", "name": "Cleaning Services", "itemListElement": [
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Floor Cleaning in Patna"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"House Cleaning in Patna"}},
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bathroom Cleaning in Patna"}},
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Deep Cleaning in Patna"}},
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Sofa Cleaning in Patna"}},
@@ -94,7 +94,7 @@ const HOMEPAGE_SCHEMAS = [
     "itemListElement": [
       { "@type": "SiteNavigationElement", "position": 1, "name": "All Services", "description": "Browse all home services — cleaning, plumbing, electrician, carpenter & more in Patna", "url": "https://useworkra.com/all-services" },
       { "@type": "SiteNavigationElement", "position": 2, "name": "Deep Cleaning in Patna", "description": "Complete home deep cleaning and sanitization — every room, corner and surface covered", "url": "https://useworkra.com/services/deep-cleaning" },
-      { "@type": "SiteNavigationElement", "position": 3, "name": "Floor Cleaning in Patna", "description": "Professional floor mopping, scrubbing & polishing for all types of flooring", "url": "https://useworkra.com/services/floor-cleaning" },
+      { "@type": "SiteNavigationElement", "position": 3, "name": "House Cleaning in Patna", "description": "Complete house cleaning — floors, rooms, kitchen, balcony and every corner of your home professionally cleaned", "url": "https://useworkra.com/services/house-cleaning" },
       { "@type": "SiteNavigationElement", "position": 4, "name": "Bathroom Cleaning in Patna", "description": "Deep sanitization and scrubbing of toilets, tiles, fixtures and entire bathroom", "url": "https://useworkra.com/services/bathroom-cleaning" },
       { "@type": "SiteNavigationElement", "position": 5, "name": "AC Repair in Patna", "description": "Expert AC installation, repair, gas refilling and maintenance for all brands", "url": "https://useworkra.com/services/ac-repair" },
       { "@type": "SiteNavigationElement", "position": 6, "name": "Plumber in Patna", "description": "Leak fixes, pipe fitting, tap repair, drain cleaning and complete plumbing solutions", "url": "https://useworkra.com/services/plumbing" },

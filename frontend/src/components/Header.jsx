@@ -20,7 +20,7 @@ const serviceCategories = [
   {
     name: "House Help",
     services: [
-      { name: "Floor Cleaning", slug: "floor-cleaning" },
+      { name: "House Cleaning", slug: "house-cleaning" },
       { name: "Glass Cleaning", slug: "glass-cleaning" },
       { name: "Utensil Cleaning", slug: "utensil-cleaning" },
       { name: "Bathroom Cleaning", slug: "bathroom-cleaning" },
