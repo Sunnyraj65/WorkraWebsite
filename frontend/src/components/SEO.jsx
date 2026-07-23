@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 const SITE_URL = "https://useworkra.com";
-const DEFAULT_IMAGE = `${SITE_URL}/wlogo.png`;
+const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`;
 
 /**
  * Helper — set or create a <meta> tag in <head>.

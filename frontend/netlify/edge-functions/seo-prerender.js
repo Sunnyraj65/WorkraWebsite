@@ -10,7 +10,7 @@
  */
 
 const SITE_URL = "https://useworkra.com";
-const DEFAULT_IMAGE = `${SITE_URL}/wlogo.png`;
+const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`;
 
 // ──────────────────────────────────────────────────────────────
 // SEO metadata for every route

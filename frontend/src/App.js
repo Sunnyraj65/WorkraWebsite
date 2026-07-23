@@ -56,25 +56,9 @@ const HOMEPAGE_SCHEMAS = [
       ]
     },
     "sameAs": ["https://www.linkedin.com/company/workra","https://www.instagram.com/workra_","https://www.facebook.com/profile.php?id=61582246742034","https://play.google.com/store/apps/details?id=com.workra.mobile"],
-    "parentOrganization": { "@id": "https://useworkra.com/#organization" },
-    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "1800", "bestRating": "5" }
+    "parentOrganization": { "@id": "https://useworkra.com/#organization" }
   },
-  // FAQPage
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      { "@type": "Question", "name": "How do I book a service on Workra?", "acceptedAnswer": { "@type": "Answer", "text": "Just select a service or chat with our AI about your problem. We'll find the right professional, let you choose a time slot, and confirm your booking in minutes." }},
-      { "@type": "Question", "name": "Are Workra professionals verified?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. All professionals are background-checked and verified before joining Workra." }},
-      { "@type": "Question", "name": "How is pricing decided on Workra?", "acceptedAnswer": { "@type": "Answer", "text": "Pricing depends on the type of service. You'll see the base price before booking. Final cost is confirmed after inspection (if required)." }},
-      { "@type": "Question", "name": "Are there any hidden charges on Workra?", "acceptedAnswer": { "@type": "Answer", "text": "No. Workra follows transparent pricing. Any additional cost will be discussed before work begins." }},
-      { "@type": "Question", "name": "Can I reschedule or cancel my Workra booking?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can reschedule or cancel from your dashboard before the service time." }},
-      { "@type": "Question", "name": "Is there an inspection before major work?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. For complex tasks, we recommend booking an expert visit before starting the full job." }},
-      { "@type": "Question", "name": "What if I'm not satisfied with the service?", "acceptedAnswer": { "@type": "Answer", "text": "Please contact our support team. We aim to resolve issues quickly and fairly." }},
-      { "@type": "Question", "name": "Do I need to provide tools or materials?", "acceptedAnswer": { "@type": "Answer", "text": "Basic tools are carried by professionals. Material costs (if required) are separate and discussed beforehand." }},
-      { "@type": "Question", "name": "How quickly can a professional arrive?", "acceptedAnswer": { "@type": "Answer", "text": "Arrival time depends on availability, but we aim for fast and reliable service." }}
-    ]
-  },
+
   // MobileApplication
   {
     "@context": "https://schema.org",
@@ -86,20 +70,20 @@ const HOMEPAGE_SCHEMAS = [
     "url": "https://play.google.com/store/apps/details?id=com.workra.mobile",
     "description": "Workra – India's first 0% commission home services app. Book verified plumbers, electricians, carpenters and cleaners in Patna with AI-powered instant quotes."
   },
-  // SiteNavigationElement
+  // Service pages navigation
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
     "name": "Workra Services",
     "itemListElement": [
-      { "@type": "SiteNavigationElement", "position": 1, "name": "All Services", "description": "Browse all home services — cleaning, plumbing, electrician, carpenter & more in Patna", "url": "https://useworkra.com/all-services" },
-      { "@type": "SiteNavigationElement", "position": 2, "name": "Deep Cleaning in Patna", "description": "Complete home deep cleaning and sanitization — every room, corner and surface covered", "url": "https://useworkra.com/services/deep-cleaning" },
-      { "@type": "SiteNavigationElement", "position": 3, "name": "House Cleaning in Patna", "description": "Complete house cleaning — floors, rooms, kitchen, balcony and every corner of your home professionally cleaned", "url": "https://useworkra.com/services/house-cleaning" },
-      { "@type": "SiteNavigationElement", "position": 4, "name": "Bathroom Cleaning in Patna", "description": "Deep sanitization and scrubbing of toilets, tiles, fixtures and entire bathroom", "url": "https://useworkra.com/services/bathroom-cleaning" },
-      { "@type": "SiteNavigationElement", "position": 5, "name": "AC Repair in Patna", "description": "Expert AC installation, repair, gas refilling and maintenance for all brands", "url": "https://useworkra.com/services/ac-repair" },
-      { "@type": "SiteNavigationElement", "position": 6, "name": "Plumber in Patna", "description": "Leak fixes, pipe fitting, tap repair, drain cleaning and complete plumbing solutions", "url": "https://useworkra.com/services/plumbing" },
-      { "@type": "SiteNavigationElement", "position": 7, "name": "Electrician & Wiring in Patna", "description": "Complete electrical wiring, rewiring, circuit setup and safety inspections", "url": "https://useworkra.com/services/wiring" },
-      { "@type": "SiteNavigationElement", "position": 8, "name": "Carpenter in Patna", "description": "Skilled carpenters for furniture repair, assembly, custom woodwork and door/window fixes", "url": "https://useworkra.com/services/carpenter" }
+      { "@type": "ListItem", "position": 1, "name": "All Services", "url": "https://useworkra.com/all-services" },
+      { "@type": "ListItem", "position": 2, "name": "Deep Cleaning in Patna", "url": "https://useworkra.com/services/deep-cleaning" },
+      { "@type": "ListItem", "position": 3, "name": "House Cleaning in Patna", "url": "https://useworkra.com/services/house-cleaning" },
+      { "@type": "ListItem", "position": 4, "name": "Bathroom Cleaning in Patna", "url": "https://useworkra.com/services/bathroom-cleaning" },
+      { "@type": "ListItem", "position": 5, "name": "AC Repair in Patna", "url": "https://useworkra.com/services/ac-repair" },
+      { "@type": "ListItem", "position": 6, "name": "Plumber in Patna", "url": "https://useworkra.com/services/plumbing" },
+      { "@type": "ListItem", "position": 7, "name": "Electrician & Wiring in Patna", "url": "https://useworkra.com/services/wiring" },
+      { "@type": "ListItem", "position": 8, "name": "Carpenter in Patna", "url": "https://useworkra.com/services/carpenter" }
     ]
   }
 ];
