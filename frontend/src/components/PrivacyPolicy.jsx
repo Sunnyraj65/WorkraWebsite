@@ -360,18 +360,14 @@ export const PrivacyPolicy = () => {
               If you have questions about this Privacy Policy, contact us:
             </p>
             <a
-              href="mailto:workraservice@gmail.com"
+              href="mailto:support@workra.in"
               className="inline-flex items-center gap-3 bg-verge-green/10 hover:bg-verge-green/20 border border-verge-green/20 rounded-xl px-5 py-3 transition-all duration-300 group"
             >
               <Mail className="w-5 h-5 text-verge-green group-hover:scale-110 transition-transform" />
               <span className="text-verge-green font-semibold">
-                workraservice@gmail.com
+                support@workra.in
               </span>
             </a>
-            <p className="text-gray-400 text-sm mt-3 italic">
-              (This email may be updated to a professional domain in the
-              future.)
-            </p>
           </SectionCard>
         </div>
 

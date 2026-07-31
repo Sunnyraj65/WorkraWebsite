@@ -244,10 +244,10 @@ export const DeleteAccount = () => {
               A confirmation will be sent to your registered email address. To
               cancel this request, email us at{" "}
               <a
-                href="mailto:workraservice@gmail.com"
+                href="mailto:support@workra.in"
                 className="text-verge-green font-medium hover:underline"
               >
-                workraservice@gmail.com
+                support@workra.in
               </a>
             </p>
             <Link
@@ -379,10 +379,10 @@ export const DeleteAccount = () => {
             <p className="text-gray-400 text-xs text-center mt-4">
               You can also request account deletion by emailing{" "}
               <a
-                href="mailto:workraservice@gmail.com"
+                href="mailto:support@workra.in"
                 className="text-verge-green hover:underline"
               >
-                workraservice@gmail.com
+                support@workra.in
               </a>
             </p>
           </div>

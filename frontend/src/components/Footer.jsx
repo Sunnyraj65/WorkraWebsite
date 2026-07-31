@@ -32,23 +32,12 @@ export const Footer = () => {
           </p>
           <div className="flex flex-col md:flex-row gap-4">
             <a
-              href="mailto:workraservice@gmail.com"
+              href="mailto:support@workra.in"
               className="inline-flex items-center gap-3 px-8 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full transition-all duration-300 backdrop-blur-sm group"
             >
               <Mail className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
               <span className="text-white font-medium tracking-wide">
-                workraservice@gmail.com
-              </span>
-            </a>
-            <a
-              href="https://wa.me/916205683473"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-8 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full transition-all duration-300 backdrop-blur-sm group"
-            >
-              <WhatsAppIcon className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
-              <span className="text-white font-medium tracking-wide">
-                +91 62056 83473
+                support@workra.in
               </span>
             </a>
             <a
@@ -90,7 +79,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://wa.me/916205683473?text=Hi%2C%20I%20want%20to%20become%20a%20Workra%20professional"
+                  href="https://wa.me/919334132209?text=Hi%2C%20I%20want%20to%20become%20a%20Workra%20professional"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white font-medium hover:text-[#00C885] hover:bg-white/10 px-3 py-1 -ml-3 rounded-lg transition-all"
@@ -134,7 +123,7 @@ export const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="https://wa.me/916205683473"
+                  href="https://wa.me/919334132209"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white font-medium hover:text-[#00C885] hover:bg-white/10 px-3 py-1 -ml-3 rounded-lg transition-all"
