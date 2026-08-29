@@ -17,14 +17,8 @@ import { Footer } from "./Footer";
 import { SEO } from "./SEO";
 
 // Importing images from assets
-import acRepair from "../assets/ac repair.jpg";
-import carpenter from "../assets/carpenter.jpg";
 import dusting from "../assets/dusting.jpg";
-import equipmentRepair from "../assets/equiment repair.jpg";
-import plumbing from "../assets/plumbring.jpg";
-import socketRepair from "../assets/socket repair.jpg";
 import windowCleaning from "../assets/window cleaning.jpg";
-import wiring from "../assets/wiring.jpg";
 import floorCleaning from "../assets/floor cleaning.png";
 import glassCleaning from "../assets/glass cleaning.png";
 import utensilCleaning from "../assets/utensil cleaning.png";
@@ -165,96 +159,6 @@ const servicesData = {
     category: "House Help",
     price: 169,
   },
-  "ac-repair": {
-    name: "AC Repair",
-    image: acRepair,
-    tagline: "AC Repair & Service in Patna",
-    shortDesc:
-      "Expert AC installation, repair, gas refilling and annual maintenance for all brands.",
-    about:
-      "Beat the heat with our professional AC repair and servicing. Our certified technicians handle all types of AC units — split, window, and central — across all major brands. From routine servicing and filter cleaning to gas refilling, compressor repair, and complete installation, we've got you covered. Fast diagnosis, transparent pricing, and genuine spare parts guaranteed.",
-    highlights: [
-      "All brands & AC types supported",
-      "Gas refilling & compressor repair",
-      "Filter cleaning & deep servicing",
-      "Installation & uninstallation",
-      "Genuine spare parts warranty",
-    ],
-    duration: "1-3 hours",
-    category: "Repair",
-  },
-  carpenter: {
-    name: "Carpenter",
-    image: carpenter,
-    tagline: "Carpentry Services in Patna",
-    shortDesc:
-      "Skilled carpenters for furniture repair, assembly, custom woodwork and door/window fixes.",
-    about:
-      "Our experienced carpenters handle all woodwork needs in your home. From repairing broken furniture, fixing doors and windows, to assembling flat-pack furniture and custom shelving — we deliver quality craftsmanship at your doorstep. Whether it's a minor fix or a complete renovation project, our carpenters bring their own tools and ensure a clean finish.",
-    highlights: [
-      "Furniture repair & assembly",
-      "Door & window fixing",
-      "Custom shelving & woodwork",
-      "Tools & materials provided",
-      "Clean finish guaranteed",
-    ],
-    duration: "2-5 hours",
-    category: "Repair",
-  },
-  "equipment-repair": {
-    name: "Equipment Repair",
-    image: equipmentRepair,
-    tagline: "Equipment Repair Services in Patna",
-    shortDesc:
-      "Fix and maintain all household appliances, equipment and electronic devices.",
-    about:
-      "Don't let a broken appliance disrupt your day. Our equipment repair technicians diagnose and fix a wide range of household appliances — from washing machines and refrigerators to geysers, microwaves, and more. We provide on-site repair with transparent pricing and use genuine replacement parts to ensure long-lasting fixes.",
-    highlights: [
-      "All major appliances covered",
-      "On-site diagnosis & repair",
-      "Genuine replacement parts",
-      "Transparent pricing upfront",
-      "Post-repair warranty",
-    ],
-    duration: "1-3 hours",
-    category: "Repair",
-  },
-  plumbing: {
-    name: "Plumbing",
-    image: plumbing,
-    tagline: "Plumbing Services in Patna",
-    shortDesc:
-      "Leak fixes, pipe fitting, tap repair, drain cleaning and complete plumbing solutions.",
-    about:
-      "From minor leaks to major pipe installations, our certified plumbers handle it all. We offer tap repair, pipe fitting, drain unclogging, water tank cleaning, and bathroom fixture installation. Our plumbers arrive with all necessary tools, provide upfront cost estimates, and ensure a mess-free experience. Emergency plumbing support is also available.",
-    highlights: [
-      "Leak detection & repair",
-      "Pipe fitting & replacement",
-      "Drain unclogging & cleaning",
-      "Tap & fixture installation",
-      "Emergency support available",
-    ],
-    duration: "1-3 hours",
-    category: "Repair",
-  },
-  "socket-repair": {
-    name: "Socket Repair",
-    image: socketRepair,
-    tagline: "Socket & Switch Repair in Patna",
-    shortDesc:
-      "Switch and socket installation, repair, replacement and electrical safety checks.",
-    about:
-      "Faulty switches and sockets are not just inconvenient — they can be dangerous. Our trained electricians handle all types of switch and socket repairs, replacements, and new installations. We ensure proper wiring, safe connections, and compliance with safety standards. Whether it's a single socket fix or rewiring an entire room, we deliver reliable results.",
-    highlights: [
-      "Switch & socket replacement",
-      "New installation & wiring",
-      "Electrical safety compliance",
-      "All socket types supported",
-      "Same-day service available",
-    ],
-    duration: "30 min - 2 hours",
-    category: "Repair",
-  },
   "window-cleaning": {
     name: "Window Cleaning",
     image: windowCleaning,
@@ -272,24 +176,6 @@ const servicesData = {
     ],
     duration: "1-2 hours",
     category: "House Help",
-  },
-  wiring: {
-    name: "Wiring",
-    image: wiring,
-    tagline: "Electrical Wiring Services in Patna",
-    shortDesc:
-      "Complete electrical wiring, rewiring, circuit setup and safety inspections for your home.",
-    about:
-      "Safe and efficient wiring is the backbone of every home. Our certified electricians provide new wiring installations, rewiring of old circuits, MCB/fuse box setup, and comprehensive electrical safety inspections. We handle everything from single-room wiring to full-house electrical setups, ensuring compliance with safety codes and long-term reliability.",
-    highlights: [
-      "New wiring & rewiring",
-      "MCB & fuse box setup",
-      "Safety inspections & compliance",
-      "Full-house electrical work",
-      "Certified electricians only",
-    ],
-    duration: "2-6 hours",
-    category: "Repair",
   },
 };
 

@@ -19,13 +19,13 @@ const SEO_DATA = {
   "/": {
     title: "Workra – House Help at Your Door in Minutes",
     description:
-      "Workra is Patna's smartest home services platform. Book verified plumbers, electricians, carpenters, and cleaners — powered by AI for instant quotes and hassle-free bookings.",
+      "Workra is Patna's smartest cleaning and house help platform. Book verified cleaners, maids, and handy helpers — powered by AI for instant quotes and hassle-free bookings.",
   },
   "/all-services": {
     title:
-      "All Home Services in Patna – Cleaning, Plumbing, Electrician & More | Workra",
+      "All Cleaning & Maid Services in Patna – House Cleaning, Deep Cleaning & More | Workra",
     description:
-      "Browse all Workra home services in Patna: floor cleaning, bathroom cleaning, AC repair, plumbing, carpentry, wiring & more. 0% commission. Book verified experts now.",
+      "Browse all Workra cleaning & maid services in Patna: house cleaning, bathroom cleaning, deep cleaning, sofa cleaning, dusting, utensil cleaning & more. 0% commission. Book verified experts now.",
   },
   "/services/house-cleaning": {
     title: "House Cleaning in Patna – Book House Cleaning Service Online | Workra",
@@ -72,43 +72,15 @@ const SEO_DATA = {
     description:
       "Window cleaning for glass panes, frames, grills and sills, inside and outside. Book verified window cleaning experts in Patna with Workra. 0% commission.",
   },
-  "/services/ac-repair": {
-    title: "AC Repair in Patna – Book AC Repair & Service Online | Workra",
-    description:
-      "Expert AC installation, repair, gas refilling and annual maintenance for all brands. Book verified AC repair technicians in Patna with Workra. 0% commission.",
-  },
-  "/services/carpenter": {
-    title: "Carpenter in Patna – Book Carpentry Service Online | Workra",
-    description:
-      "Skilled carpenters for furniture repair, assembly, custom woodwork and door/window fixes. Book verified carpenters in Patna with Workra. 0% commission.",
-  },
-  "/services/equipment-repair": {
-    title:
-      "Equipment Repair in Patna – Book Appliance Repair Service Online | Workra",
-    description:
-      "Fix and maintain all household appliances, equipment and electronic devices. Book verified equipment repair experts in Patna with Workra. 0% commission.",
-  },
-  "/services/plumbing": {
-    title: "Plumber in Patna – Book Plumbing Service Online | Workra",
-    description:
-      "Leak fixes, pipe fitting, tap repair, drain cleaning and complete plumbing solutions. Book verified plumbers in Patna with Workra. 0% commission.",
-  },
-  "/services/socket-repair": {
-    title:
-      "Socket Repair in Patna – Book Socket & Switch Repair Online | Workra",
-    description:
-      "Switch and socket installation, repair, replacement and electrical safety checks. Book verified electricians in Patna with Workra. 0% commission.",
-  },
-  "/services/wiring": {
-    title:
-      "Electrician & Wiring in Patna – Book Wiring Service Online | Workra",
-    description:
-      "Complete electrical wiring, rewiring, circuit setup and safety inspections. Book verified electricians in Patna with Workra. 0% commission.",
-  },
   "/privacy-policy": {
     title: "Privacy Policy | Workra",
     description:
       "Read Workra's privacy policy. Learn how we collect, use, and protect your personal information when you use our home services platform.",
+  },
+  "/terms-and-conditions": {
+    title: "Terms & Conditions | Workra",
+    description:
+      "Read Workra's terms and conditions. Learn about the terms of service governing the use of Workra's cleaning and house help platform in Patna.",
   },
 };
 

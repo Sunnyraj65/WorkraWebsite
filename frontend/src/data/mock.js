@@ -15,7 +15,7 @@ export const featuresData = [
     tagline: "Book in 60 Seconds",
     title: "Tell us your problem,",
     titleItalic: "we'll handle the rest.",
-    description: "Just describe what you need — cleaning, plumbing, electrical, or carpentry. Our AI matches you with the right verified professional instantly.",
+    description: "Just describe what you need — house cleaning, deep cleaning, sofa cleaning, or maid help. Our AI matches you with the right verified professional instantly.",
     overlays: [
       { icon: "target", text: "Select your service" },
       { icon: "globe", text: "Choose a time slot" },
@@ -52,7 +52,7 @@ export const featuresData = [
 
 export const testimonialData = {
   stars: 5,
-  quote: "Workra sent a plumber within 15 minutes. The service was excellent and the pricing was completely transparent. Best home service platform in Patna!",
+  quote: "Workra sent a cleaning expert within 15 minutes. The service was excellent and the pricing was completely transparent. Best cleaning service in Patna!",
   author: "Rahul Kumar",
   company: "Patna, Bihar",
   brands: ["Workra", "Patna", "Bihar"],
@@ -81,7 +81,7 @@ export const dashboardData = {
 };
 
 export const footerData = {
-  description: "Workra is India's first 0% commission home services platform. Book verified plumbers, electricians, carpenters, and cleaners in Patna.",
+  description: "Workra is India's first 0% commission cleaning and house help platform. Book verified cleaners, maids, and handy helpers in Patna.",
   copyright: "© 2026 Workra. All rights reserved.",
   pages: [
     { label: "Services", href: "#" },

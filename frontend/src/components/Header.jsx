@@ -18,27 +18,23 @@ const WhatsAppIcon = ({ className }) => (
 // Service categories and their sub-services
 const serviceCategories = [
   {
-    name: "House Help",
+    name: "Cleaning Services",
     services: [
       { name: "House Cleaning", slug: "house-cleaning" },
-      { name: "Glass Cleaning", slug: "glass-cleaning" },
-      { name: "Utensil Cleaning", slug: "utensil-cleaning" },
-      { name: "Bathroom Cleaning", slug: "bathroom-cleaning" },
       { name: "Deep Cleaning", slug: "deep-cleaning" },
+      { name: "Bathroom Cleaning", slug: "bathroom-cleaning" },
       { name: "Sofa Cleaning", slug: "sofa-cleaning" },
-      { name: "Dusting", slug: "dusting" },
+      { name: "Glass Cleaning", slug: "glass-cleaning" },
       { name: "Window Cleaning", slug: "window-cleaning" },
     ],
   },
   {
-    name: "Repair & Fix",
+    name: "Maid & Handy Help",
     services: [
-      { name: "AC Repair", slug: "ac-repair" },
-      { name: "Carpenter", slug: "carpenter" },
-      { name: "Equipment Repair", slug: "equipment-repair" },
-      { name: "Plumbing", slug: "plumbing" },
-      { name: "Socket Repair", slug: "socket-repair" },
-      { name: "Wiring", slug: "wiring" },
+      { name: "Utensil Cleaning", slug: "utensil-cleaning" },
+      { name: "Dusting Service", slug: "dusting" },
+      { name: "Daily House Help", slug: "house-cleaning" },
+      { name: "Deep Cleaning", slug: "deep-cleaning" },
     ],
   },
 ];

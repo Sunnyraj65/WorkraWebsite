@@ -82,13 +82,8 @@
       "/services/sofa-cleaning",
       "/services/dusting",
       "/services/window-cleaning",
-      "/services/ac-repair",
-      "/services/carpenter",
-      "/services/equipment-repair",
-      "/services/plumbing",
-      "/services/socket-repair",
-      "/services/wiring",
-      "/privacy-policy"
+      "/privacy-policy",
+      "/terms-and-conditions"
     ],
     "skipThirdPartyRequests": true
   },

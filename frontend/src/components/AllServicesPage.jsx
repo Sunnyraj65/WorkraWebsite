@@ -7,14 +7,8 @@ import { SEO } from "./SEO";
 
 // Importing images from assets
 import girlcleaning from "../assets/girlcleaning.png";
-import acRepair from "../assets/ac repair.jpg";
-import carpenter from "../assets/carpenter.jpg";
 import dusting from "../assets/dusting.jpg";
-import equipmentRepair from "../assets/equiment repair.jpg";
-import plumbing from "../assets/plumbring.jpg";
-import socketRepair from "../assets/socket repair.jpg";
 import windowCleaning from "../assets/window cleaning.jpg";
-import wiring from "../assets/wiring.jpg";
 import floorCleaning from "../assets/floor cleaning.png";
 import glassCleaning from "../assets/glass cleaning.png";
 import utensilCleaning from "../assets/utensil cleaning.png";
@@ -30,16 +24,10 @@ const allServices = [
     description: "Complete house cleaning — every room, kitchen & balcony",
   },
   {
-    name: "Glass Cleaning",
-    image: glassCleaning,
-    slug: "glass-cleaning",
-    description: "Crystal-clear glass & mirror cleaning services",
-  },
-  {
-    name: "Utensil Cleaning",
-    image: utensilCleaning,
-    slug: "utensil-cleaning",
-    description: "Thorough kitchen utensil & cookware washing",
+    name: "Deep Cleaning",
+    image: deepCleaning,
+    slug: "deep-cleaning",
+    description: "Complete home deep cleaning & sanitization",
   },
   {
     name: "Bathroom Cleaning",
@@ -48,16 +36,22 @@ const allServices = [
     description: "Deep sanitization & scrubbing of bathrooms",
   },
   {
-    name: "Deep Cleaning",
-    image: deepCleaning,
-    slug: "deep-cleaning",
-    description: "Complete home deep cleaning & sanitization",
-  },
-  {
     name: "Sofa Cleaning",
     image: sofaCleaning,
     slug: "sofa-cleaning",
     description: "Professional sofa & upholstery deep steam cleaning",
+  },
+  {
+    name: "Utensil Cleaning",
+    image: utensilCleaning,
+    slug: "utensil-cleaning",
+    description: "Thorough kitchen utensil & cookware washing",
+  },
+  {
+    name: "Glass Cleaning",
+    image: glassCleaning,
+    slug: "glass-cleaning",
+    description: "Crystal-clear glass & mirror cleaning services",
   },
   {
     name: "Dusting",
@@ -66,46 +60,10 @@ const allServices = [
     description: "Deep cleaning & dusting for every corner of your home",
   },
   {
-    name: "AC Repair",
-    image: acRepair,
-    slug: "ac-repair",
-    description: "Expert AC installation, repair & maintenance services",
-  },
-  {
-    name: "Carpenter",
-    image: carpenter,
-    slug: "carpenter",
-    description: "Furniture repair, assembly & custom woodwork",
-  },
-  {
-    name: "Equipment Repair",
-    image: equipmentRepair,
-    slug: "equipment-repair",
-    description: "Fix & maintain all household appliances & equipment",
-  },
-  {
-    name: "Plumbing",
-    image: plumbing,
-    slug: "plumbing",
-    description: "Leak fixes, pipe fitting & complete plumbing solutions",
-  },
-  {
-    name: "Socket Repair",
-    image: socketRepair,
-    slug: "socket-repair",
-    description: "Switch & socket installation, repair & replacement",
-  },
-  {
     name: "Window Cleaning",
     image: windowCleaning,
     slug: "window-cleaning",
     description: "Spotless window & glass cleaning services",
-  },
-  {
-    name: "Wiring",
-    image: wiring,
-    slug: "wiring",
-    description: "Electrical wiring, rewiring & safety inspections",
   },
 ];
 
@@ -113,15 +71,15 @@ export const AllServicesPage = () => {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="All Home Services in Patna – Cleaning, Plumbing, Electrician & More"
-        description="Browse all Workra home services in Patna: floor cleaning, bathroom cleaning, AC repair, plumbing, carpentry, wiring & more. 0% commission. Book verified experts now."
+        title="All Cleaning & Maid Services in Patna – House Cleaning, Sofa, Deep Cleaning & More"
+        description="Browse all Workra cleaning & maid services in Patna: house cleaning, bathroom cleaning, deep cleaning, sofa cleaning, dusting, utensil cleaning & more. 0% commission. Book verified experts now."
         path="/all-services"
-        keywords="home services Patna, cleaning services Patna, plumber Patna, electrician Patna, AC repair Patna, floor cleaning, bathroom cleaning, deep cleaning, Workra services"
+        keywords="cleaning services Patna, maid service Patna, house cleaning Patna, bathroom cleaning, deep cleaning, sofa cleaning Patna, Workra services"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          "name": "All Home Services – Workra",
-          "description": "Browse all home services available on Workra in Patna. Cleaning, repairs, plumbing, electrical & more.",
+          "name": "All Cleaning & Maid Services – Workra",
+          "description": "Browse all cleaning and maid services available on Workra in Patna. House cleaning, deep cleaning, sofa cleaning & more.",
           "url": "https://useworkra.com/all-services",
           "isPartOf": { "@id": "https://useworkra.com/#website" },
           "breadcrumb": {

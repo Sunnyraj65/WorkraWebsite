@@ -2,9 +2,6 @@ import {
   Play,
   Globe,
   TrendingUp,
-  Wrench,
-  Zap,
-  Hammer,
   HandHeart,
   Sparkles,
 } from "lucide-react";
@@ -12,11 +9,12 @@ import { heroData } from "../data/mock";
 import heroImage from "../assets/test.jpg";
 
 const services = [
-  { name: "Plumber", icon: Wrench },
-  { name: "Electrician", icon: Zap },
-  { name: "Carpenter", icon: Hammer },
-  { name: "Helper", icon: HandHeart },
-  { name: "Cleaner", icon: Sparkles },
+  { name: "House Cleaning", icon: Sparkles },
+  { name: "Deep Cleaning", icon: Sparkles },
+  { name: "Bathroom Cleaning", icon: Sparkles },
+  { name: "Sofa Cleaning", icon: Sparkles },
+  { name: "Utensil Cleaning", icon: Sparkles },
+  { name: "Maid & Handy Help", icon: HandHeart },
 ];
 
 export const HeroSection = () => {

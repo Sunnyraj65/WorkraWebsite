@@ -4,14 +4,8 @@ import { ArrowRight, Clock, Sparkles, ShieldCheck } from "lucide-react";
 
 // Importing images from assets
 import girlcleaning from "../assets/girlcleaning.png";
-import acRepair from "../assets/ac repair.jpg";
-import carpenter from "../assets/carpenter.jpg";
 import dusting from "../assets/dusting.jpg";
-import equipmentRepair from "../assets/equiment repair.jpg";
-import plumbing from "../assets/plumbring.jpg";
-import socketRepair from "../assets/socket repair.jpg";
 import windowCleaning from "../assets/window cleaning.jpg";
-import wiring from "../assets/wiring.jpg";
 import floorCleaning from "../assets/floor cleaning.png";
 import glassCleaning from "../assets/glass cleaning.png";
 import utensilCleaning from "../assets/utensil cleaning.png";
@@ -21,19 +15,13 @@ import sofaCleaning from "../assets/sofa cleaning.png";
 
 const services = [
   { name: "House Cleaning", image: floorCleaning, slug: "house-cleaning", price: 129 },
-  { name: "Glass Cleaning", image: glassCleaning, slug: "glass-cleaning", price: 129 },
-  { name: "Utensil Cleaning", image: utensilCleaning, slug: "utensil-cleaning", price: 99 },
-  { name: "Bathroom Cleaning", image: bathroomCleaning, slug: "bathroom-cleaning", price: 179 },
   { name: "Deep Cleaning", image: deepCleaning, slug: "deep-cleaning", price: 449 },
+  { name: "Bathroom Cleaning", image: bathroomCleaning, slug: "bathroom-cleaning", price: 179 },
   { name: "Sofa Cleaning", image: sofaCleaning, slug: "sofa-cleaning" },
+  { name: "Utensil Cleaning", image: utensilCleaning, slug: "utensil-cleaning", price: 99 },
+  { name: "Glass Cleaning", image: glassCleaning, slug: "glass-cleaning", price: 129 },
   { name: "Dusting", image: dusting, slug: "dusting", price: 169 },
-  { name: "AC Repair", image: acRepair, slug: "ac-repair" },
-  { name: "Carpenter", image: carpenter, slug: "carpenter" },
-  { name: "Equipment Repair", image: equipmentRepair, slug: "equipment-repair" },
-  { name: "Plumbing", image: plumbing, slug: "plumbing" },
-  { name: "Socket Repair", image: socketRepair, slug: "socket-repair" },
   { name: "Window Cleaning", image: windowCleaning, slug: "window-cleaning" },
-  { name: "Wiring", image: wiring, slug: "wiring" },
 ];
 
 export const ServicesSection = () => {
@@ -42,8 +30,8 @@ export const ServicesSection = () => {
     const jsonLd = {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      "name": "Workra Home Services",
-      "description": "Book trusted house help — from hourly bookings to express cleans to daily upkeep. 13 services with transparent flat pricing.",
+      "name": "Workra Cleaning & Maid Services",
+      "description": "Book trusted cleaning and house help — from hourly bookings to express cleans to daily upkeep. Transparent flat pricing in Patna.",
       "numberOfItems": services.length,
       "itemListElement": services.map((service, index) => ({
         "@type": "ListItem",

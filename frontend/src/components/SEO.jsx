@@ -62,7 +62,7 @@ export const SEO = ({
   const canonicalUrl = `${SITE_URL}${path}`;
   const metaDescription =
     description ||
-    "Workra is Patna's smartest home services platform. Book verified plumbers, electricians, carpenters, and cleaners — powered by AI for instant quotes and hassle-free bookings.";
+    "Workra is Patna's smartest cleaning and house help platform. Book verified cleaners, maids, and handy helpers — powered by AI for instant quotes and hassle-free bookings.";
 
   useEffect(() => {
     // Title
