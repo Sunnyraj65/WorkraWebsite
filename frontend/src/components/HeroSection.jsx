@@ -6,7 +6,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { heroData } from "../data/mock";
-import heroImage from "../assets/test.jpg";
+import heroImage from "../assets/hero-cleaners.jpg";
 
 const services = [
   { name: "House Cleaning", icon: Sparkles },
@@ -38,7 +38,7 @@ export const HeroSection = () => {
               </span>
             </h1>
             <p
-              className="text-white/60 text-base md:text-lg mt-8 max-w-[480px] leading-relaxed font-light animate-fade-in-up delay-200"
+              className="text-white/70 text-base md:text-lg mt-8 max-w-[480px] leading-relaxed font-light animate-fade-in-up delay-200"
               style={{
                 opacity: 0,
                 animationFillMode: "forwards",
@@ -108,11 +108,11 @@ export const HeroSection = () => {
 
           {/* Right Image + Stats */}
           <div className="relative mt-8 lg:mt-0">
-            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] max-h-[600px] lg:max-h-[700px]">
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] max-h-[600px] lg:max-h-[700px] shadow-2xl bg-white">
               <img
                 src={heroImage}
-                alt="Workra Team"
-                className="w-full h-full object-cover"
+                alt="Workra Verified Cleaning & House Help Team in Patna"
+                className="w-full h-full object-cover object-top"
               />
             </div>
 
@@ -122,16 +122,16 @@ export const HeroSection = () => {
               style={{ animationDelay: "2s" }}
             >
               <div className="flex items-center gap-2 mb-2">
-                <div className="w-6 h-6 bg-verge-accent rounded-full flex items-center justify-center">
-                  <Globe className="w-3 h-3 text-white" />
+                <div className="w-6 h-6 bg-[#00C885] rounded-full flex items-center justify-center">
+                  <Sparkles className="w-3 h-3 text-white" />
                 </div>
                 <span className="text-white text-sm font-medium">
-                  Trusted Experts
+                  Verified Cleaners
                 </span>
               </div>
               <div className="mt-2">
                 <p className="text-white/80 text-xl font-medium italic tracking-wide">
-                  Ready anytime
+                  Ready in <span className="text-[#a8e6a3] not-italic font-bold">10 mins</span>
                 </p>
               </div>
             </div>
