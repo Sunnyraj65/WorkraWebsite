@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Clock, Sparkles, ShieldCheck } from "lucide-react";
+import { ArrowRight, Clock, Sparkles, ShieldCheck, MapPin } from "lucide-react";
+import { LocalityRequestModal } from "./LocalityRequestModal";
 
 // Importing images from assets
 import girlcleaning from "../assets/girlcleaning.png";
@@ -25,6 +26,8 @@ const services = [
 ];
 
 export const ServicesSection = () => {
+  const [isLocalityModalOpen, setIsLocalityModalOpen] = useState(false);
+
   // Inject ItemList JSON-LD structured data for services grid
   useEffect(() => {
     const jsonLd = {
@@ -255,8 +258,39 @@ export const ServicesSection = () => {
               </Link>
             ))}
           </div>
+
+          {/* Locality Request Callout Banner */}
+          <div className="mt-8 sm:mt-12 p-4 sm:p-6 rounded-2xl bg-emerald-50/70 border border-emerald-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div className="flex items-center gap-3.5">
+              <div className="w-10 h-10 rounded-xl bg-[#3D7B52]/10 flex items-center justify-center text-[#3D7B52] shrink-0 hidden sm:flex">
+                <MapPin className="w-5 h-5" />
+              </div>
+              <div>
+                <p className="text-sm sm:text-base font-bold text-gray-900">
+                  Can't find your area or society?
+                </p>
+                <p className="text-xs sm:text-sm text-gray-600 mt-0.5">
+                  We're expanding rapidly across Patna. Tell us where you want Workra next!
+                </p>
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={() => setIsLocalityModalOpen(true)}
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#3D7B52] hover:bg-[#2A4D35] text-white font-medium text-xs sm:text-sm rounded-xl transition-all shrink-0 cursor-pointer shadow-sm active:scale-95"
+            >
+              <span>Request Workra in your locality</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* Locality Request Modal */}
+      <LocalityRequestModal
+        isOpen={isLocalityModalOpen}
+        onClose={() => setIsLocalityModalOpen(false)}
+      />
     </section>
   );
 };

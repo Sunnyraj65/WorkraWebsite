@@ -1,12 +1,15 @@
+import { useState } from "react";
 import {
   Play,
   Globe,
   TrendingUp,
   HandHeart,
   Sparkles,
+  ArrowRight,
 } from "lucide-react";
 import { heroData } from "../data/mock";
 import heroImage from "../assets/hero-cleaners.jpg";
+import { LocalityRequestModal } from "./LocalityRequestModal";
 
 const services = [
   { name: "House Cleaning", icon: Sparkles },
@@ -18,6 +21,8 @@ const services = [
 ];
 
 export const HeroSection = () => {
+  const [isLocalityModalOpen, setIsLocalityModalOpen] = useState(false);
+
   return (
     <section className="relative bg-gradient-to-br from-[#45844b] to-[#3a703f] min-h-screen overflow-hidden">
       {/* Radial Gradient Overlay */}
@@ -26,6 +31,17 @@ export const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Left Content */}
           <div className="relative z-10">
+            {/* Trust Badge */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200/80 shadow-sm mb-6 animate-fade-in-up">
+              <span className="relative flex h-2 w-2 shrink-0">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#10b981]"></span>
+              </span>
+              <span className="text-xs sm:text-sm font-semibold text-[#181818] tracking-tight">
+                Trusted by 150+ homes in Patna
+              </span>
+            </div>
+
             <h1 className="text-white leading-[1.15] animate-fade-in-up">
               <span className="font-sans text-4xl md:text-5xl lg:text-[4.5rem] font-semibold block">
                 Home help that
@@ -79,6 +95,27 @@ export const HeroSection = () => {
                   </span>
                 </div>
               </a>
+            </div>
+
+            {/* Request Locality Link */}
+            <div
+              className="mt-6 animate-fade-in-up"
+              style={{
+                opacity: 0,
+                animationFillMode: "forwards",
+                animationDelay: "500ms",
+              }}
+            >
+              <button
+                type="button"
+                onClick={() => setIsLocalityModalOpen(true)}
+                className="inline-flex items-center gap-1.5 text-[#a8e6a3] hover:text-white font-medium text-sm sm:text-base group transition-colors cursor-pointer"
+              >
+                <span className="underline underline-offset-4 decoration-[#a8e6a3]/40 group-hover:decoration-white">
+                  Request Workra in your locality
+                </span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
             </div>
 
             {/* Service Icons Marquee */}
@@ -138,6 +175,12 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Locality Request Modal */}
+      <LocalityRequestModal
+        isOpen={isLocalityModalOpen}
+        onClose={() => setIsLocalityModalOpen(false)}
+      />
     </section>
   );
 };
