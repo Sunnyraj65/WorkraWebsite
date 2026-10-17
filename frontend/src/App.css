@@ -2,11 +2,24 @@
 
 .landing-page {
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  overscroll-behavior-x: none;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  overscroll-behavior-x: none;
 }
 
 /* Scroll-triggered fade in animations */

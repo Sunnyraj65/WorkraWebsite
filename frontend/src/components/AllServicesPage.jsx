@@ -5,65 +5,73 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { SEO } from "./SEO";
 
-// Importing images from assets
+// Importing custom 3D service icons
 import girlcleaning from "../assets/girlcleaning.png";
-import dusting from "../assets/dusting.jpg";
-import windowCleaning from "../assets/window cleaning.jpg";
-import floorCleaning from "../assets/floor cleaning.png";
-import glassCleaning from "../assets/glass cleaning.png";
-import utensilCleaning from "../assets/utensil cleaning.png";
-import bathroomCleaning from "../assets/bathroom cleaning.png";
-import deepCleaning from "../assets/deep cleaning.png";
-import sofaCleaning from "../assets/sofa cleaning.png";
+import floorCleaning from "../assets/service-icons/sweeping-mopping.jpg";
+import utensilCleaning from "../assets/service-icons/utensils.jpg";
+import dusting from "../assets/service-icons/dusting.jpg";
+import bathroomCleaning from "../assets/service-icons/bathroom-surface-cleaning.jpg";
+import wardrobeCleaning from "../assets/service-icons/complete-wardrobe-cleaning.jpg";
+import kitchenCabinet from "../assets/service-icons/kitchen-cabinet-cleaning.jpg";
+import ironing from "../assets/service-icons/ironing-folding.jpg";
+import windowCleaning from "../assets/service-icons/window.jpg";
 
 const allServices = [
   {
-    name: "House Cleaning",
+    name: "House Cleaning (Jhadu-Pocha)",
     image: floorCleaning,
     slug: "house-cleaning",
-    description: "Complete house cleaning — every room, kitchen & balcony",
+    description: "Sweeping, mopping, and everyday floor upkeep — flat ₹99/hr",
+    price: 99,
   },
   {
-    name: "Deep Cleaning",
-    image: deepCleaning,
-    slug: "deep-cleaning",
-    description: "Complete home deep cleaning & sanitization",
+    name: "Utensil Cleaning (Bartan)",
+    image: utensilCleaning,
+    slug: "utensil-cleaning",
+    description: "Thorough kitchen utensil & cookware washing — flat ₹99/hr",
+    price: 99,
+  },
+  {
+    name: "Dusting & Organizing",
+    image: dusting,
+    slug: "dusting",
+    description: "Furniture dusting, bed-making, and room tidying — flat ₹99/hr",
+    price: 99,
   },
   {
     name: "Bathroom Cleaning",
     image: bathroomCleaning,
     slug: "bathroom-cleaning",
-    description: "Deep sanitization & scrubbing of bathrooms",
+    description: "Everyday bathroom tile scrubbing & toilet sanitization — flat ₹99/hr",
+    price: 99,
   },
   {
-    name: "Sofa Cleaning",
-    image: sofaCleaning,
-    slug: "sofa-cleaning",
-    description: "Professional sofa & upholstery deep steam cleaning",
+    name: "Complete Wardrobe Cleaning",
+    image: wardrobeCleaning,
+    slug: "wardrobe-cleaning",
+    description: "Closet decluttering, clothes folding & shelf organizing — flat ₹99/hr",
+    price: 99,
   },
   {
-    name: "Utensil Cleaning",
-    image: utensilCleaning,
-    slug: "utensil-cleaning",
-    description: "Thorough kitchen utensil & cookware washing",
+    name: "Kitchen Cabinet Cleaning",
+    image: kitchenCabinet,
+    slug: "kitchen-cabinet-cleaning",
+    description: "Modular kitchen boxes, shelves & cupboard degreasing — flat ₹99/hr",
+    price: 99,
   },
   {
-    name: "Glass Cleaning",
-    image: glassCleaning,
-    slug: "glass-cleaning",
-    description: "Crystal-clear glass & mirror cleaning services",
-  },
-  {
-    name: "Dusting",
-    image: dusting,
-    slug: "dusting",
-    description: "Deep cleaning & dusting for every corner of your home",
+    name: "Ironing & Folding",
+    image: ironing,
+    slug: "ironing-and-folding",
+    description: "Crisp clothes ironing, folding & wardrobe organizing — flat ₹99/hr",
+    price: 99,
   },
   {
     name: "Window Cleaning",
     image: windowCleaning,
     slug: "window-cleaning",
-    description: "Spotless window & glass cleaning services",
+    description: "Spotless window glass & grill cleaning — flat ₹99/hr",
+    price: 99,
   },
 ];
 
@@ -71,15 +79,15 @@ export const AllServicesPage = () => {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="All Cleaning & Maid Services in Patna – House Cleaning, Sofa, Deep Cleaning & More"
-        description="Browse all Workra cleaning & maid services in Patna: house cleaning, bathroom cleaning, deep cleaning, sofa cleaning, dusting, utensil cleaning & more. 0% commission. Book verified experts now."
+        title="All House Help & Maid Services in Patna – Flat ₹99/Hour | Workra"
+        description="Browse Workra house help services in Patna: sweeping & mopping (jhadu-pocha), utensil washing (bartan), dusting, bathroom cleaning & more at flat ₹99/hour."
         path="/all-services"
-        keywords="cleaning services Patna, maid service Patna, house cleaning Patna, bathroom cleaning, deep cleaning, sofa cleaning Patna, Workra services"
+        keywords="house help Patna, maid services Patna, 99 per hour maid Patna, utensil washing Patna, jhadu pocha Patna, Workra services"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          "name": "All Cleaning & Maid Services – Workra",
-          "description": "Browse all cleaning and maid services available on Workra in Patna. House cleaning, deep cleaning, sofa cleaning & more.",
+          "name": "All House Help & Maid Services – Workra",
+          "description": "Browse all on-demand house help and maid services in Patna at flat ₹99/hour on Workra.",
           "url": "https://useworkra.com/all-services",
           "isPartOf": { "@id": "https://useworkra.com/#website" },
           "breadcrumb": {
@@ -162,48 +170,50 @@ export const AllServicesPage = () => {
           </div>
 
           {/* Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3.5 sm:gap-5 md:gap-7">
             {allServices.map((service, index) => (
               <Link
                 to={`/services/${service.slug}`}
                 key={index}
-                className="group cursor-pointer"
+                className="group cursor-pointer flex flex-col"
                 style={{
                   opacity: 0,
                   animation: `fadeInUp 0.6s ease-out forwards`,
-                  animationDelay: `${index * 80}ms`,
+                  animationDelay: `${index * 60}ms`,
                 }}
               >
                 {/* Card */}
-                <div className="relative bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
-                  {/* Image */}
-                  <div className="relative aspect-[3/4] sm:aspect-[4/5] overflow-hidden">
+                <div className="relative bg-white rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.04)] hover:shadow-[0_16px_36px_-8px_rgba(69,132,75,0.18)] hover:border-[#45844b]/40 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between h-full p-3 sm:p-5">
+                  {/* 3D Icon Container */}
+                  <div className="relative aspect-square w-full rounded-xl sm:rounded-2xl bg-gradient-to-b from-[#f8faf9] to-[#f1f6f3] flex items-center justify-center p-3 sm:p-6 overflow-hidden mb-3 sm:mb-4 group-hover:from-[#f0f7f2] group-hover:to-[#e5f0e8] transition-colors duration-300">
                     <img
                       src={service.image}
                       alt={`${service.name} service in Patna by Workra`}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-108 drop-shadow-sm"
                       loading="lazy"
                     />
-                    {/* Overlay on hover */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-                    {/* Book Now Button - appears on hover */}
-                    <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-                      <button className="w-full py-3 bg-[#45844b] text-white rounded-xl font-semibold text-sm hover:bg-[#3a703f] transition-colors flex items-center justify-center gap-2">
-                        Book Now
-                        <ArrowRight className="w-4 h-4" />
-                      </button>
-                    </div>
                   </div>
 
                   {/* Info */}
-                  <div className="p-3 sm:p-4 md:p-5">
-                    <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900 group-hover:text-[#45844b] transition-colors">
-                      {service.name}
-                    </h3>
-                    <p className="text-slate-500 text-xs sm:text-sm mt-1 sm:mt-1.5 leading-relaxed hidden sm:block">
-                      {service.description}
-                    </p>
+                  <div className="flex-1 flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-sm sm:text-base md:text-lg font-bold text-slate-900 group-hover:text-[#45844b] transition-colors leading-snug">
+                        {service.name}
+                      </h3>
+                      <p className="text-slate-500 text-xs sm:text-sm mt-1 sm:mt-1.5 leading-relaxed line-clamp-2">
+                        {service.description}
+                      </p>
+                    </div>
+
+                    {/* Footer Row */}
+                    <div className="pt-3 sm:pt-4 mt-3 sm:mt-4 border-t border-slate-100 flex items-center justify-between">
+                      <span className="text-[11px] sm:text-xs font-bold text-[#45844b] bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
+                        Flat ₹{service.price}/hr
+                      </span>
+                      <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-[#45844b] group-hover:text-white group-hover:shadow-md group-hover:shadow-[#45844b]/20 transition-all duration-300">
+                        <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-0.5 transition-transform" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </Link>

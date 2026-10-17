@@ -2,73 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://useworkra.com/</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://useworkra.com/all-services</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://useworkra.com/services/house-cleaning</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://useworkra.com/services/glass-cleaning</loc>
-    <lastmod>2026-07-06</lastmod>
+    <loc>https://useworkra.com/services/ironing-and-folding</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://useworkra.com/services/utensil-cleaning</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://useworkra.com/services/bathroom-cleaning</loc>
-    <lastmod>2026-07-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://useworkra.com/services/deep-cleaning</loc>
-    <lastmod>2026-07-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://useworkra.com/services/sofa-cleaning</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://useworkra.com/services/dusting</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://useworkra.com/services/window-cleaning</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://useworkra.com/privacy-policy</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://useworkra.com/terms-and-conditions</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>

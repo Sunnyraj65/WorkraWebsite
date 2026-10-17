@@ -12,12 +12,12 @@ import heroImage from "../assets/hero-cleaners.jpg";
 import { LocalityRequestModal } from "./LocalityRequestModal";
 
 const services = [
-  { name: "House Cleaning", icon: Sparkles },
-  { name: "Deep Cleaning", icon: Sparkles },
+  { name: "House Cleaning (Jhadu-Pocha)", icon: Sparkles },
+  { name: "Utensil Washing (Bartan)", icon: Sparkles },
+  { name: "Kitchen Help & Chores", icon: HandHeart },
+  { name: "Dusting & Organizing", icon: Sparkles },
   { name: "Bathroom Cleaning", icon: Sparkles },
-  { name: "Sofa Cleaning", icon: Sparkles },
-  { name: "Utensil Cleaning", icon: Sparkles },
-  { name: "Maid & Handy Help", icon: HandHeart },
+  { name: "Flat ₹99/Hour House Help", icon: HandHeart },
 ];
 
 export const HeroSection = () => {
@@ -38,7 +38,7 @@ export const HeroSection = () => {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#10b981]"></span>
               </span>
               <span className="text-xs sm:text-sm font-semibold text-[#181818] tracking-tight">
-                Trusted by 150+ homes in Patna
+                Workra House Help • Arrives in 10 mins • Flat ₹99/hr in Patna
               </span>
             </div>
 
@@ -163,12 +163,12 @@ export const HeroSection = () => {
                   <Sparkles className="w-3 h-3 text-white" />
                 </div>
                 <span className="text-white text-sm font-medium">
-                  Verified Cleaners
+                  Verified House Help
                 </span>
               </div>
               <div className="mt-2">
                 <p className="text-white/80 text-xl font-medium italic tracking-wide">
-                  Ready in <span className="text-[#a8e6a3] not-italic font-bold">10 mins</span>
+                  Ready in <span className="text-[#a8e6a3] not-italic font-bold">10 mins</span> • <span className="text-white not-italic font-bold">₹99/hr</span>
                 </p>
               </div>
             </div>

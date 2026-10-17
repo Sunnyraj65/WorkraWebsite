@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { Link, useParams, useNavigate, Navigate } from "react-router-dom";
 import {
   ArrowRight,
   ChevronLeft,
@@ -16,69 +16,69 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { SEO } from "./SEO";
 
-// Importing images from assets
-import dusting from "../assets/dusting.jpg";
-import windowCleaning from "../assets/window cleaning.jpg";
-import floorCleaning from "../assets/floor cleaning.png";
-import glassCleaning from "../assets/glass cleaning.png";
-import utensilCleaning from "../assets/utensil cleaning.png";
-import bathroomCleaning from "../assets/bathroom cleaning.png";
-import deepCleaning from "../assets/deep cleaning.png";
-import sofaCleaning from "../assets/sofa cleaning.png";
+// Importing custom 3D service icons
+import floorCleaning from "../assets/service-icons/sweeping-mopping.jpg";
+import utensilCleaning from "../assets/service-icons/utensils.jpg";
+import dusting from "../assets/service-icons/dusting.jpg";
+import bathroomCleaning from "../assets/service-icons/bathroom-surface-cleaning.jpg";
+import wardrobeCleaning from "../assets/service-icons/complete-wardrobe-cleaning.jpg";
+import kitchenCabinet from "../assets/service-icons/kitchen-cabinet-cleaning.jpg";
+import ironing from "../assets/service-icons/ironing-folding.jpg";
+import windowCleaning from "../assets/service-icons/window.jpg";
 
 const servicesData = {
   "house-cleaning": {
-    name: "House Cleaning",
+    name: "House Cleaning (Jhadu-Pocha)",
     image: floorCleaning,
     tagline: "House Cleaning Services in Patna",
     shortDesc:
-      "Complete house cleaning services — floors, rooms, kitchen, balcony and every corner of your home professionally cleaned.",
+      "Complete house sweeping, mopping, dusting, and room upkeep by verified female house helpers.",
     about:
-      "Our house cleaning service covers your entire home from top to bottom. Our trained professionals clean every room, hallway, kitchen, balcony and living space using the right techniques and eco-friendly products. From mopping and sweeping floors to wiping surfaces, dusting furniture, and organizing spaces — we handle it all. Whether it's a daily maid, weekly cleanup or a one-time full house clean, our verified helpers arrive at your doorstep fully equipped and ready to make your home spotless.",
+      "Our house cleaning service gives you instant, reliable female domestic help for your home. Our verified helpers handle sweeping and mopping (jhadu-pocha) of all rooms, dusting surfaces, balcony cleaning, and kitchen cleanup. Book in 60 seconds and a trusted helper arrives at your door in 10 minutes. Flat ₹99 per hour with zero monthly commitments.",
     highlights: [
-      "Complete home cleaning — every room covered",
-      "Floors, kitchen, balcony & living spaces",
-      "Eco-friendly cleaning products used",
-      "Daily, weekly or one-time service available",
-      "Fully equipped, background-verified professionals",
+      "Sweeping & mopping (Jhadu-Pocha) of all rooms",
+      "Dusting furniture, tables & shelves",
+      "Balcony & corridor cleaning",
+      "Arrives in 10 minutes at your door",
+      "Flat ₹99/hour transparent pricing",
     ],
-    duration: "2-4 hours",
+    duration: "1-3 hours",
     category: "House Help",
-    price: 129,
-  },
-  "glass-cleaning": {
-    name: "Glass Cleaning",
-    image: glassCleaning,
-    tagline: "Glass Cleaning Services in Patna",
-    shortDesc:
-      "Crystal-clear cleaning for windows, mirrors, glass doors, partitions and all glass surfaces.",
-    about:
-      "Sparkling clean glass surfaces make your home look brighter and more inviting. Our professionals use streak-free cleaning solutions and professional-grade tools to clean windows, mirrors, glass partitions, shower enclosures, and glass doors. We handle both interior and exterior glass surfaces with care, ensuring no watermarks or residue are left behind.",
-    highlights: [
-      "Windows, mirrors & glass doors",
-      "Streak-free cleaning solutions",
-      "Interior & exterior surfaces",
-      "Shower enclosures & partitions",
-      "No watermarks or residue",
-    ],
-    duration: "1-2 hours",
-    category: "House Help",
-    price: 129,
+    price: 99,
   },
   "utensil-cleaning": {
-    name: "Utensil Cleaning",
+    name: "Utensil Cleaning (Bartan)",
     image: utensilCleaning,
     tagline: "Utensil Cleaning Services in Patna",
     shortDesc:
-      "Thorough cleaning and scrubbing of all kitchen utensils, pots, pans and cookware.",
+      "Thorough cleaning, scrubbing, and drying of all kitchen utensils, pots, pans, and cookware.",
     about:
-      "Tired of piling dishes? Our utensil cleaning service takes care of all your kitchen cleaning needs. From everyday dishes and glasses to greasy pots, pans, and heavy cookware — our trained helpers wash, scrub, and dry everything to perfection. We use safe, food-grade cleaning agents and ensure your kitchen stays hygienic and organized.",
+      "Piled-up dishes after meals? Book verified female house help on-demand. Our helpers wash, scrub, rinse, and dry all plates, spoons, glassware, cooker, kadhai, and pots to sparkling cleanliness. Flat ₹99 per hour, helper at your door in 10 minutes.",
     highlights: [
-      "All types of utensils & cookware",
-      "Food-grade cleaning agents",
-      "Greasy pots & pans handled",
-      "Kitchen organization included",
-      "Hygienic & thorough cleaning",
+      "All kitchen utensils, pots & pans scrubbed",
+      "Safe dishwashing soaps & hygiene care",
+      "Kitchen counter & sink cleaned",
+      "Dishes dried & organized",
+      "Flat ₹99/hour transparent pricing",
+    ],
+    duration: "1-2 hours",
+    category: "House Help",
+    price: 99,
+  },
+  "dusting": {
+    name: "Dusting & Organizing",
+    image: dusting,
+    tagline: "Dusting & Organizing Services in Patna",
+    shortDesc:
+      "Thorough dusting of all surfaces, furniture, shelves, fans, and home organizing.",
+    about:
+      "Keep your home spotless and allergen-free. Our helpers dust furniture, TV units, tables, shelves, ceiling fans, and window ledges, as well as fold clothes and tidy up rooms. Flat ₹99 per hour.",
+    highlights: [
+      "Furniture, shelves & tabletop dusting",
+      "Ceiling fans & switchboard wipe down",
+      "Bed making & room tidying",
+      "Clothes folding & organizing",
+      "Flat ₹99/hour transparent pricing",
     ],
     duration: "1-2 hours",
     category: "House Help",
@@ -89,101 +89,120 @@ const servicesData = {
     image: bathroomCleaning,
     tagline: "Bathroom Cleaning Services in Patna",
     shortDesc:
-      "Deep sanitization and scrubbing of toilets, tiles, fixtures, mirrors and entire bathroom.",
+      "Everyday bathroom floor scrubbing, toilet disinfection, and washbasin sanitization.",
     about:
-      "A sparkling bathroom is essential for a healthy home. Our bathroom cleaning service covers everything — from scrubbing tiles and grout to sanitizing toilets, sinks, and fixtures. We remove soap scum, hard water stains, and mold buildup using professional-grade disinfectants. Your bathroom will look, smell, and feel brand new after every session.",
+      "A clean bathroom is essential for a healthy home. Our verified helpers scrub bathroom floor tiles, disinfect washbasins and toilet bowls, and wipe down mirror and fixtures. Flat ₹99 per hour.",
     highlights: [
-      "Complete toilet & fixture sanitization",
-      "Tile & grout deep scrubbing",
-      "Hard water stain removal",
-      "Mold & mildew treatment",
-      "Professional-grade disinfectants",
+      "Toilet bowl & washbasin sanitization",
+      "Bathroom floor tile scrubbing",
+      "Mirror & faucet wipe down",
+      "Trash disposal & air fresh",
+      "Flat ₹99/hour transparent pricing",
     ],
     duration: "1-2 hours",
     category: "House Help",
-    price: 179,
+    price: 99,
   },
-  "deep-cleaning": {
-    name: "Deep Cleaning",
-    image: deepCleaning,
-    tagline: "Deep Cleaning Services in Patna",
+  "wardrobe-cleaning": {
+    name: "Complete Wardrobe Cleaning",
+    image: wardrobeCleaning,
+    tagline: "Wardrobe & Closet Organizing Services in Patna",
     shortDesc:
-      "Complete home deep cleaning and sanitization — every room, corner and surface covered.",
+      "Complete wardrobe cleaning, clothes folding, seasonal sorting, and shelf organizing.",
     about:
-      "Our deep cleaning service is the ultimate solution for a thoroughly clean home. We go beyond regular cleaning to reach every hidden corner, behind furniture, inside cabinets, under beds, and along baseboards. Using industrial-grade equipment and safe cleaning products, our team scrubs, dusts, and sanitizes your entire home from top to bottom. Ideal for move-ins, festivals, or periodic refreshes.",
+      "Messy closet slowing down your mornings? Book verified female house help on-demand. Our helpers declutter, wipe down wardrobe shelves and modular drawers, iron and fold clothes neatly, sort garments by category, and stack everything in order. Flat ₹99 per hour, helper at your door in 10 minutes.",
     highlights: [
-      "Every room covered top to bottom",
-      "Behind furniture & hidden corners",
-      "Industrial-grade equipment",
-      "Ideal for move-ins & festivals",
-      "Complete sanitization included",
-    ],
-    duration: "4-8 hours",
-    category: "House Help",
-    price: 449,
-  },
-  "sofa-cleaning": {
-    name: "Sofa Cleaning",
-    image: sofaCleaning,
-    tagline: "Sofa Cleaning Services in Patna",
-    shortDesc:
-      "Professional sofa & upholstery cleaning with deep steam extraction for fabric, leather and all sofa types.",
-    about:
-      "Your sofa collects dust, stains, allergens, and odours over time — regular vacuuming isn't enough. Our professional sofa cleaning service uses hot-water extraction and steam cleaning technology to deep-clean every fibre of your sofa. We handle fabric, leather, rexine, and microfibre upholstery with the right technique and safe cleaning agents. Stubborn stains, pet hair, food spills, and embedded dirt are no match for our trained professionals. Your sofa will look, feel, and smell as good as new.",
-    highlights: [
-      "Fabric, leather & rexine sofas",
-      "Hot-water extraction & steam cleaning",
-      "Stain & odour removal",
-      "Pet hair & allergen deep clean",
-      "Safe, eco-friendly cleaning agents",
+      "Closet decluttering & shelf wipe down",
+      "Neat clothes folding & hanger arrangement",
+      "Drawer sorting & seasonal clothing stacking",
+      "Ironing & wardrobe organization",
+      "Flat ₹99/hour transparent pricing",
     ],
     duration: "1-3 hours",
     category: "House Help",
+    price: 99,
   },
-  dusting: {
-    name: "Dusting",
-    image: dusting,
-    tagline: "Dusting Services in Patna",
+  "kitchen-cabinet-cleaning": {
+    name: "Kitchen Cabinet Cleaning",
+    image: kitchenCabinet,
+    tagline: "Kitchen Cabinet & Cupboard Cleaning in Patna",
     shortDesc:
-      "Thorough dusting of all surfaces, furniture, shelves, fans, fixtures and hard-to-reach areas.",
+      "Thorough cleaning, degreasing, and organizing of all kitchen cabinet boxes, modular drawers, and shelves.",
     about:
-      "Dust accumulates fast and affects air quality and aesthetics. Our dusting service covers all surfaces in your home — from furniture, shelves, and countertops to ceiling fans, light fixtures, and window ledges. We use microfiber cloths and proper techniques to trap dust instead of spreading it. Regular dusting keeps your home fresh, allergen-free, and looking its best.",
+      "Sticky grime, oil buildup, or disorganised kitchen cabinets? Book verified female house help on-demand. Our helpers wipe down cabinet exteriors, deep-clean modular shelves, reorganize spice boxes and cookware, and sanitize your kitchen storage. Flat ₹99 per hour with zero commitments.",
     highlights: [
-      "All surfaces & furniture covered",
-      "Ceiling fans & light fixtures",
-      "Microfiber dust-trapping technique",
-      "Hard-to-reach areas included",
-      "Allergen reduction",
+      "Interior & exterior kitchen cabinet wiping",
+      "Modular shelves & spice box organizing",
+      "Oil, grease & dust removal",
+      "Cookware & utensil realignment",
+      "Flat ₹99/hour transparent pricing",
     ],
-    duration: "1-3 hours",
+    duration: "1-2 hours",
     category: "House Help",
-    price: 169,
+    price: 99,
+  },
+  "ironing-and-folding": {
+    name: "Ironing & Folding",
+    image: ironing,
+    tagline: "Clothes Ironing & Folding Services in Patna",
+    shortDesc:
+      "Crisp clothes ironing, crease removal, and neat clothes folding & wardrobe organizing.",
+    about:
+      "Tired of laundry piles? Book verified female house help on-demand. Our helpers press and iron your shirts, pants, sarees, kurtas, and everyday clothes with care, followed by neat folding and wardrobe stacking. Flat ₹99 per hour, helper at your door in 10 minutes.",
+    highlights: [
+      "Crisp steam & dry clothes ironing",
+      "Shirts, trousers, sarees & daily wear",
+      "Neat clothes folding & wardrobe stacking",
+      "Delicate fabrics handled with care",
+      "Flat ₹99/hour transparent pricing",
+    ],
+    duration: "1-2 hours",
+    category: "House Help",
+    price: 99,
   },
   "window-cleaning": {
     name: "Window Cleaning",
     image: windowCleaning,
     tagline: "Window Cleaning Services in Patna",
     shortDesc:
-      "Window cleaning for glass panes, frames, grills and sills, inside and reachable outside.",
+      "Window cleaning for glass panes, frames, grills and sills.",
     about:
-      "Clean windows brighten up a room almost instantly. Our trained and background-verified professionals clean all types of windows — glass panes, frames, grills, and sills — both inside and reachable outside surfaces. We use professional squeegees and eco-friendly solutions that leave your windows sparkling without streaks or watermarks.",
+      "Clean windows brighten up a room almost instantly. Our background-verified helpers clean window glass panes, frames, and grills to remove dust and dirt without streaks.",
     highlights: [
       "Glass panes, frames & grills",
-      "Interior & exterior cleaning",
-      "Professional squeegees used",
+      "Dust and smudge removal",
       "Eco-friendly solutions",
-      "Streak-free, spotless results",
+      "Streak-free spotless finish",
+      "Flat ₹99/hour transparent pricing",
     ],
     duration: "1-2 hours",
     category: "House Help",
+    price: 99,
   },
 };
 
-// Helper to get all services as array
+// Aliases for slug flexibility
+servicesData["wardrobe"] = servicesData["wardrobe-cleaning"];
+servicesData["complete-wardrobe-cleaning"] = servicesData["wardrobe-cleaning"];
+servicesData["kitchen-cabinet"] = servicesData["kitchen-cabinet-cleaning"];
+
+// Canonical slugs for service list
+const CANONICAL_SLUGS = [
+  "house-cleaning",
+  "utensil-cleaning",
+  "dusting",
+  "bathroom-cleaning",
+  "wardrobe-cleaning",
+  "kitchen-cabinet-cleaning",
+  "ironing-and-folding",
+  "window-cleaning",
+];
+
+// Helper to get all canonical services as array
 const getAllServices = () =>
-  Object.entries(servicesData).map(([slug, data]) => ({
+  CANONICAL_SLUGS.map((slug) => ({
     slug,
-    ...data,
+    ...servicesData[slug],
   }));
 
 export const ServiceDetailPage = () => {
@@ -196,6 +215,14 @@ export const ServiceDetailPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [serviceSlug]);
+
+  if (serviceSlug === "deep-cleaning") {
+    return <Navigate to="/services/house-cleaning" replace />;
+  }
+
+  if (serviceSlug === "glass-cleaning") {
+    return <Navigate to="/services/ironing-and-folding" replace />;
+  }
 
   if (!service) {
     return (
@@ -234,10 +261,10 @@ export const ServiceDetailPage = () => {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title={`${service.name} in Patna – Book ${service.name} Service Online`}
-        description={`${service.shortDesc}${service.price ? ` Starting at just ₹${service.price}.` : ''} Book verified ${service.name.toLowerCase()} experts in Patna with Workra. 0% commission, background-verified professionals.`}
+        title={`${service.name} in Patna – Book Online at ₹99/hr | Workra`}
+        description={`${service.shortDesc}${service.price ? ` Flat ₹${service.price}/hour.` : ''} Book verified female house help in Patna with Workra. Arrives in 10 minutes.`}
         path={`/services/${serviceSlug}`}
-        keywords={`${service.name} Patna, ${service.name.toLowerCase()} service Patna, book ${service.name.toLowerCase()}, ${service.name.toLowerCase()} near me, Workra ${service.name.toLowerCase()}, home services Patna${service.price ? `, ${service.name.toLowerCase()} price Patna, cheap ${service.name.toLowerCase()} Patna` : ''}`}
+        keywords={`${service.name} Patna, ${service.name.toLowerCase()} service Patna, book ${service.name.toLowerCase()}, ${service.name.toLowerCase()} near me, Workra ${service.name.toLowerCase()}, house help Patna, 99 per hour maid Patna`}
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Service",
@@ -327,10 +354,10 @@ export const ServiceDetailPage = () => {
                 {service.price && (
                   <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 bg-[#45844b] rounded-full">
                     <span className="text-xs sm:text-sm font-semibold text-white/80">
-                      Starts at
+                      Flat
                     </span>
                     <span className="text-sm sm:text-base font-extrabold text-white">
-                      ₹{service.price}
+                      ₹{service.price}/hr
                     </span>
                   </div>
                 )}
@@ -373,14 +400,12 @@ export const ServiceDetailPage = () => {
 
             {/* Right Image */}
             <div className="order-1 lg:order-2">
-              <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl shadow-black/10">
+              <div className="relative rounded-3xl overflow-hidden aspect-[4/3] bg-gradient-to-b from-white/95 to-[#f3f7f4] p-6 sm:p-10 flex items-center justify-center border border-slate-200/70 shadow-2xl shadow-black/5">
                 <img
                   src={service.image}
                   alt={`${service.name} service in Patna — professional ${service.name.toLowerCase()} by Workra`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain max-h-[320px] drop-shadow-md"
                 />
-                {/* Subtle gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
               </div>
             </div>
           </div>
@@ -482,22 +507,26 @@ export const ServiceDetailPage = () => {
                 <Link
                   key={s.slug}
                   to={`/services/${s.slug}`}
-                  className="group flex-shrink-0 w-[160px] sm:w-[200px] md:w-[220px]"
+                  className="group flex-shrink-0 w-[170px] sm:w-[210px] md:w-[230px]"
                 >
-                  <div className="relative rounded-2xl overflow-hidden aspect-[3/2] mb-1">
-                    <img
-                      src={s.image}
-                      alt={`${s.name} service in Patna by Workra`}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-                    <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
-                      <span className="text-white text-xs sm:text-sm font-semibold">
+                  <div className="bg-white rounded-2xl border border-slate-200/80 p-3 sm:p-4 hover:shadow-lg hover:border-[#45844b]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full">
+                    <div className="aspect-square rounded-xl bg-gradient-to-b from-[#f8faf9] to-[#f1f6f3] p-3 flex items-center justify-center mb-2.5 group-hover:from-[#f0f7f2] group-hover:to-[#e5f0e8] transition-colors">
+                      <img
+                        src={s.image}
+                        alt={`${s.name} service in Patna by Workra`}
+                        className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-108 drop-shadow-sm"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-slate-900 text-xs sm:text-sm font-bold group-hover:text-[#45844b] transition-colors line-clamp-1">
                         {s.name}
-                      </span>
-                      <div className="w-6 h-6 rounded-full bg-white/25 backdrop-blur-sm flex items-center justify-center group-hover:bg-white/50 transition-colors">
-                        <ArrowRight className="w-3 h-3 text-white" />
+                      </h4>
+                      <div className="flex items-center justify-between mt-2 pt-2 border-t border-slate-100">
+                        <span className="text-[11px] font-bold text-[#45844b]">Flat ₹{s.price || 99}/hr</span>
+                        <div className="w-5 h-5 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-[#45844b] group-hover:text-white transition-colors">
+                          <ArrowRight className="w-2.5 h-2.5" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -529,8 +558,8 @@ export const ServiceDetailPage = () => {
                 {service.price && (
                   <div className="flex items-center gap-2.5 px-4 py-2.5 bg-white rounded-xl border border-[#45844b]/15 shadow-sm relative overflow-hidden">
                     <div className="absolute left-0 top-1.5 bottom-1.5 w-0.5 rounded-full bg-gradient-to-b from-[#45844b] to-emerald-400"></div>
-                    <span className="text-sm text-slate-500 ml-1">From</span>
-                    <span className="text-base font-bold text-[#45844b]">₹{service.price}</span>
+                    <span className="text-sm text-slate-500 ml-1">Flat</span>
+                    <span className="text-base font-bold text-[#45844b]">₹{service.price}/hr</span>
                   </div>
                 )}
                 <div className="flex items-center gap-2 px-4 py-2.5 bg-white rounded-xl border border-slate-100">

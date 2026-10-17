@@ -21,7 +21,7 @@ export const Footer = () => {
         <div className="mb-12 border-b border-white/10 pb-12">
           <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">Workra</h2>
           <p className="text-white/70 text-base md:text-lg max-w-xl leading-relaxed">
-            Workra is Patna's smartest cleaning and house help platform. Book verified cleaners, maids, and handy helpers — powered by AI for instant quotes and hassle-free booking.
+            Workra is Patna's trusted on-demand house help platform. Book verified female helpers for house cleaning, utensils, dusting, and daily household chores in minutes at flat ₹99/hour.
           </p>
         </div>
 
@@ -62,13 +62,18 @@ export const Footer = () => {
             </h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link to="/services/deep-cleaning" className="text-white font-medium hover:text-[#00C885] transition-colors">
-                  Deep Cleaning
+                <Link to="/services/house-cleaning" className="text-white font-medium hover:text-[#00C885] transition-colors">
+                  House Cleaning (Jhadu-Pocha)
                 </Link>
               </li>
               <li>
-                <Link to="/services/house-cleaning" className="text-white font-medium hover:text-[#00C885] transition-colors">
-                  House Cleaning
+                <Link to="/services/utensil-cleaning" className="text-white font-medium hover:text-[#00C885] transition-colors">
+                  Utensil Cleaning (Bartan)
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/dusting" className="text-white font-medium hover:text-[#00C885] transition-colors">
+                  Dusting & Organizing
                 </Link>
               </li>
               <li>
@@ -77,13 +82,18 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/services/sofa-cleaning" className="text-white font-medium hover:text-[#00C885] transition-colors">
-                  Sofa Cleaning
+                <Link to="/services/wardrobe-cleaning" className="text-white font-medium hover:text-[#00C885] transition-colors">
+                  Complete Wardrobe Cleaning
                 </Link>
               </li>
               <li>
-                <Link to="/services/utensil-cleaning" className="text-white font-medium hover:text-[#00C885] transition-colors">
-                  Utensil Cleaning
+                <Link to="/services/kitchen-cabinet-cleaning" className="text-white font-medium hover:text-[#00C885] transition-colors">
+                  Kitchen Cabinet Cleaning
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/ironing-and-folding" className="text-white font-medium hover:text-[#00C885] transition-colors">
+                  Ironing & Folding
                 </Link>
               </li>
               <li>

@@ -18,23 +18,25 @@ const WhatsAppIcon = ({ className }) => (
 // Service categories and their sub-services
 const serviceCategories = [
   {
-    name: "Cleaning Services",
+    name: "House Help Services",
     services: [
-      { name: "House Cleaning", slug: "house-cleaning" },
-      { name: "Deep Cleaning", slug: "deep-cleaning" },
+      { name: "House Cleaning (Jhadu-Pocha)", slug: "house-cleaning" },
+      { name: "Utensil Washing (Bartan)", slug: "utensil-cleaning" },
+      { name: "Dusting & Organizing", slug: "dusting" },
       { name: "Bathroom Cleaning", slug: "bathroom-cleaning" },
-      { name: "Sofa Cleaning", slug: "sofa-cleaning" },
-      { name: "Glass Cleaning", slug: "glass-cleaning" },
+      { name: "Complete Wardrobe Cleaning", slug: "wardrobe-cleaning" },
+      { name: "Kitchen Cabinet Cleaning", slug: "kitchen-cabinet-cleaning" },
+      { name: "Ironing & Folding", slug: "ironing-and-folding" },
       { name: "Window Cleaning", slug: "window-cleaning" },
     ],
   },
   {
-    name: "Maid & Handy Help",
+    name: "By The Hour (₹99/hr)",
     services: [
-      { name: "Utensil Cleaning", slug: "utensil-cleaning" },
-      { name: "Dusting Service", slug: "dusting" },
-      { name: "Daily House Help", slug: "house-cleaning" },
-      { name: "Deep Cleaning", slug: "deep-cleaning" },
+      { name: "1-Hour Express Chore (₹99)", slug: "house-cleaning" },
+      { name: "Full House Reset (₹198)", slug: "house-cleaning" },
+      { name: "Kitchen Prep & Utensils (₹99/hr)", slug: "utensil-cleaning" },
+      { name: "Any Custom Chore (₹99/hr)", slug: "house-cleaning" },
     ],
   },
 ];

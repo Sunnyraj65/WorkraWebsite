@@ -17,60 +17,48 @@ const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`;
 // ──────────────────────────────────────────────────────────────
 const SEO_DATA = {
   "/": {
-    title: "Workra – House Help at Your Door in Minutes",
+    title: "Workra – House Help at Your Door in Minutes | ₹99/Hour in Patna",
     description:
-      "Workra is Patna's smartest cleaning and house help platform. Book verified cleaners, maids, and handy helpers — powered by AI for instant quotes and hassle-free bookings.",
+      "Patna's trusted on-demand house help platform. Book verified female domestic helpers for house cleaning, utensils, and chores in minutes at flat ₹99/hour.",
   },
   "/all-services": {
     title:
-      "All Cleaning & Maid Services in Patna – House Cleaning, Deep Cleaning & More | Workra",
+      "All House Help & Maid Services in Patna – Flat ₹99/Hour | Workra",
     description:
-      "Browse all Workra cleaning & maid services in Patna: house cleaning, bathroom cleaning, deep cleaning, sofa cleaning, dusting, utensil cleaning & more. 0% commission. Book verified experts now.",
+      "Browse Workra house help services in Patna: sweeping & mopping (jhadu-pocha), utensil washing (bartan), dusting, bathroom cleaning & more at flat ₹99/hour.",
   },
   "/services/house-cleaning": {
-    title: "House Cleaning in Patna – Book House Cleaning Service Online | Workra",
+    title: "House Cleaning in Patna (Jhadu-Pocha) – Book at ₹99/hr | Workra",
     description:
-      "Complete house cleaning services — floors, rooms, kitchen, balcony and every corner of your home professionally cleaned. Book verified house cleaning experts in Patna with Workra. 0% commission.",
+      "Complete house sweeping, mopping, dusting, and room upkeep by verified female house helpers. Book at flat ₹99/hour with Workra.",
   },
-  "/services/glass-cleaning": {
-    title: "Glass Cleaning in Patna – Book Glass Cleaning Service Online | Workra",
+  "/services/ironing-and-folding": {
+    title: "Ironing & Folding Service in Patna – Book at ₹99/hr | Workra",
     description:
-      "Crystal-clear cleaning for windows, mirrors, glass doors, partitions and all glass surfaces. Book verified glass cleaning experts in Patna with Workra. 0% commission.",
+      "Crisp clothes ironing, crease removal, neat folding & wardrobe organizing. Book verified helpers in Patna with Workra at flat ₹99/hour.",
   },
   "/services/utensil-cleaning": {
     title:
-      "Utensil Cleaning in Patna – Book Utensil Cleaning Service Online | Workra",
+      "Utensil Cleaning in Patna (Bartan) – Book at ₹99/hr | Workra",
     description:
-      "Thorough cleaning and scrubbing of all kitchen utensils, pots, pans and cookware. Book verified utensil cleaning experts in Patna with Workra. 0% commission.",
+      "Thorough cleaning, scrubbing, and drying of all kitchen utensils, pots, pans, and cookware. Book at flat ₹99/hour with Workra.",
   },
   "/services/bathroom-cleaning": {
     title:
-      "Bathroom Cleaning in Patna – Book Bathroom Cleaning Service Online | Workra",
+      "Bathroom Cleaning in Patna – Book at ₹99/hr | Workra",
     description:
-      "Deep sanitization and scrubbing of toilets, tiles, fixtures, mirrors and entire bathroom. Book verified bathroom cleaning experts in Patna with Workra. 0% commission.",
-  },
-  "/services/deep-cleaning": {
-    title:
-      "Deep Cleaning in Patna – Book Deep Cleaning Service Online | Workra",
-    description:
-      "Complete home deep cleaning and sanitization — every room, corner and surface covered. Book verified deep cleaning experts in Patna with Workra. 0% commission.",
-  },
-  "/services/sofa-cleaning": {
-    title:
-      "Sofa Cleaning in Patna – Book Sofa Cleaning Service Online | Workra",
-    description:
-      "Professional sofa & upholstery cleaning with deep steam extraction for fabric, leather and all sofa types. Book verified sofa cleaning experts in Patna with Workra. 0% commission.",
+      "Everyday bathroom tile scrubbing, toilet sanitization, and washbasin cleaning at flat ₹99/hour with Workra.",
   },
   "/services/dusting": {
-    title: "Dusting Service in Patna – Book Dusting Service Online | Workra",
+    title: "Dusting & Organizing in Patna – Book at ₹99/hr | Workra",
     description:
-      "Thorough dusting of all surfaces, furniture, shelves, fans, fixtures and hard-to-reach areas. Book verified dusting experts in Patna with Workra. 0% commission.",
+      "Thorough dusting of all surfaces, furniture, shelves, fans, and home organizing at flat ₹99/hour with Workra.",
   },
   "/services/window-cleaning": {
     title:
-      "Window Cleaning in Patna – Book Window Cleaning Service Online | Workra",
+      "Window Cleaning in Patna – Book Window Cleaning at ₹99/hr | Workra",
     description:
-      "Window cleaning for glass panes, frames, grills and sills, inside and outside. Book verified window cleaning experts in Patna with Workra. 0% commission.",
+      "Window cleaning for glass panes, frames, grills, and sills at flat ₹99/hour with Workra.",
   },
   "/privacy-policy": {
     title: "Privacy Policy | Workra",

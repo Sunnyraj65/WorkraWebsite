@@ -57,12 +57,12 @@ export const SEO = ({
   noIndex = false,
 }) => {
   const fullTitle = title
-    ? `${title} | Workra`
-    : "Workra – House Help at Your Door in Minutes";
+    ? (title.includes("Workra") ? title : `${title} | Workra`)
+    : "Workra – House Help at Your Door in Minutes | ₹99/Hour in Patna";
   const canonicalUrl = `${SITE_URL}${path}`;
   const metaDescription =
     description ||
-    "Workra is Patna's smartest cleaning and house help platform. Book verified cleaners, maids, and handy helpers — powered by AI for instant quotes and hassle-free bookings.";
+    "Patna's trusted on-demand house help in minutes. Book verified female domestic helpers for sweeping, mopping, utensil washing, and daily chores at flat ₹99/hour.";
 
   useEffect(() => {
     // Title

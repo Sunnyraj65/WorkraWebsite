@@ -1,10 +1,10 @@
 export const heroData = {
-  title: "India's First 0% Commission",
-  titleItalic: "Home Services Platform",
-  subtitle: "Book a verified cleaner in one tap and a trusted professional will be at your door in minutes.",
+  title: "Patna's On-Demand",
+  titleItalic: "House Help in Minutes",
+  subtitle: "Book verified female house helpers for sweeping, mopping, utensil washing, dusting, and everyday household chores in Patna. A trusted helper at your door in 10 minutes for just ₹99/hour.",
   stats: [
-    { label: "Services Completed", value: "2,500+", icon: "play" },
-    { label: "Happy Customers", value: "1,800+", change: "Growing", icon: "globe" }
+    { label: "Tasks Completed", value: "2,500+", icon: "play" },
+    { label: "Happy Households", value: "1,800+", change: "Growing", icon: "globe" }
   ],
   brands: ["Workra", "Patna", "Bihar", "India"]
 };
@@ -13,23 +13,23 @@ export const featuresData = [
   {
     id: 1,
     tagline: "Book in 60 Seconds",
-    title: "Tell us your problem,",
+    title: "Tell us your household chore,",
     titleItalic: "we'll handle the rest.",
-    description: "Just describe what you need — house cleaning, deep cleaning, sofa cleaning, or maid help. Our AI matches you with the right verified professional instantly.",
+    description: "Just select what you need — house cleaning (jhadu-pocha), utensil washing (bartan), dusting, or kitchen chores. Verified female house help arrives at your door in 10 minutes at just ₹99/hour.",
     overlays: [
-      { icon: "target", text: "Select your service" },
-      { icon: "globe", text: "Choose a time slot" },
-      { icon: "check-square", text: "Professional at your door" }
+      { icon: "target", text: "Select your task" },
+      { icon: "globe", text: "Helper arrives in 10 mins" },
+      { icon: "check-square", text: "Flat ₹99/hr transparent pricing" }
     ],
     image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=700&h=900&fit=crop",
     imagePosition: "left"
   },
   {
     id: 2,
-    tagline: "100% Verified Professionals",
-    title: "Every worker is background-checked",
-    titleItalic: "for your safety.",
-    description: "All Workra professionals go through strict verification including ID checks, skill assessments, and background screening before they join our platform.",
+    tagline: "100% Verified Helpers",
+    title: "Every helper is background-checked",
+    titleItalic: "for your family's safety.",
+    description: "All Workra helpers go through strict police verification, Aadhaar verification, and hands-on skill checks before visiting your home.",
     overlays: [
       { label: "Trust Score", value: "98%" }
     ],
@@ -38,12 +38,12 @@ export const featuresData = [
   },
   {
     id: 3,
-    tagline: "Zero Commission Model",
-    title: "Workers keep 100% of",
-    titleItalic: "what they earn.",
-    description: "Unlike other platforms, Workra charges 0% commission from service providers. This means happier workers, better service quality, and fair pricing for you.",
+    tagline: "Transparent ₹99/Hour Pricing",
+    title: "Pay only for the time you use,",
+    titleItalic: "no monthly maid hassle.",
+    description: "No monthly maid commitments, no sudden leaves, and no commission fees. Pay flat ₹99/hour for verified female domestic help whenever you need it.",
     overlays: [
-      { label: "Commission", value: "0%", sublabel: "Learn More →" }
+      { label: "Hourly Rate", value: "₹99/hr", sublabel: "Zero Hassle →" }
     ],
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=700&h=900&fit=crop",
     imagePosition: "left"
@@ -52,7 +52,7 @@ export const featuresData = [
 
 export const testimonialData = {
   stars: 5,
-  quote: "Workra sent a cleaning expert within 15 minutes. The service was excellent and the pricing was completely transparent. Best cleaning service in Patna!",
+  quote: "Workra sent a verified house helper within 10 minutes. She did the sweeping, mopping, and washed all the utensils effortlessly. Best house help service in Patna at just ₹99/hr!",
   author: "Rahul Kumar",
   company: "Patna, Bihar",
   brands: ["Workra", "Patna", "Bihar"],
@@ -71,7 +71,7 @@ export const dashboardData = {
   stats: [
     { label: "Services Booked", value: "2,589", change: "+34%", positive: true, sublabel: "Compared to last month" },
     { label: "Customer Satisfaction", value: "98%", type: "gauge" },
-    { label: "Avg. Response Time", value: "12 min", change: "-8 min", positive: true, sublabel: "Compared to last month" }
+    { label: "Avg. Response Time", value: "10 min", change: "-8 min", positive: true, sublabel: "Compared to last month" }
   ],
   customers: [
     { name: "Amit Singh", company: "Boring Road, Patna", avatar: "AS" },
@@ -81,7 +81,7 @@ export const dashboardData = {
 };
 
 export const footerData = {
-  description: "Workra is India's first 0% commission cleaning and house help platform. Book verified cleaners, maids, and handy helpers in Patna.",
+  description: "Workra is Patna's trusted on-demand house help platform. Book verified female helpers for house cleaning, utensils, dusting, and daily household chores in minutes at flat ₹99/hour.",
   copyright: "© 2026 Workra. All rights reserved.",
   pages: [
     { label: "Services", href: "#" },

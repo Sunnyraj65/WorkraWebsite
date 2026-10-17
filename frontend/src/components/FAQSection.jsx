@@ -3,49 +3,44 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    question: "How do I book a service on Workra?",
+    question: "How do I book house help on Workra?",
     answer:
-      "Just select a service or chat with our AI about your problem. We’ll find the right professional, let you choose a time slot, and confirm your booking in minutes. 🚀",
+      "Just select your chore or hours in the app. We'll dispatch a verified female helper near you, and she will arrive at your doorstep in 10 minutes. 🚀",
   },
   {
-    question: "Are Workra professionals verified?",
+    question: "What tasks can a Workra house helper do?",
     answer:
-      "Yes. All professionals are background-checked and verified before joining Workra.",
+      "Our verified female helpers handle all everyday domestic chores — sweeping & mopping (jhadu-pocha), utensil washing (bartan), dusting furniture, kitchen prep (chopping vegetables, kneading dough), bathroom upkeep, and bed making.",
   },
   {
-    question: "How is pricing decided?",
+    question: "How does the pricing work?",
     answer:
-      "Pricing depends on the type of service. You’ll see the base price before booking. Final cost is confirmed after inspection (if required).",
+      "Workra has a simple, flat pricing model: ₹99 per hour. No monthly maid commitments, no advance deposits, and zero commission.",
   },
   {
-    question: "Is there an inspection before major work?",
+    question: "How quickly does the helper arrive?",
     answer:
-      "Yes. For complex tasks, we recommend booking an expert visit before starting the full job.",
+      "Workra delivers house help in minutes — typically within 10 to 15 minutes of booking anywhere in our covered areas in Patna.",
+  },
+  {
+    question: "Are Workra helpers background-checked and safe?",
+    answer:
+      "Yes. Every helper undergoes strict police background verification, Aadhaar verification, and hands-on domestic skill assessment before joining.",
   },
   {
     question: "Are there any hidden charges?",
     answer:
-      "No. Workra follows transparent pricing. Any additional cost will be discussed before work begins.",
+      "No. Transparent flat ₹99/hour pricing. You pay only for the hours you book.",
   },
   {
     question: "Can I reschedule or cancel my booking?",
     answer:
-      "Yes. You can reschedule or cancel from your dashboard before the service time.",
+      "Yes. You can reschedule or cancel your booking directly from the Workra app without any hassle.",
   },
   {
-    question: "What if I’m not satisfied with the service?",
+    question: "Do I need to provide cleaning supplies?",
     answer:
-      "Please contact our support team. We aim to resolve issues quickly and fairly.",
-  },
-  {
-    question: "Do I need to provide tools or materials?",
-    answer:
-      "Basic tools are carried by professionals. Material costs (if required) are separate and discussed beforehand.",
-  },
-  {
-    question: "How quickly can a professional arrive?",
-    answer:
-      "Arrival time depends on availability, but we aim for fast and reliable service.",
+      "We recommend providing your household cleaning essentials (broom, mop, dishwashing liquid/soap, scrubber) since helpers use what your home is accustomed to.",
   },
 ];
 
