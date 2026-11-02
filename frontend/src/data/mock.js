@@ -85,7 +85,8 @@ export const footerData = {
   copyright: "© 2026 Workra. All rights reserved.",
   pages: [
     { label: "Services", href: "#" },
-    { label: "Download App", href: "https://play.google.com/store/apps/details?id=com.workra.mobile" },
+    { label: "Download App (Android)", href: "https://play.google.com/store/apps/details?id=com.workra.mobile" },
+    { label: "Download App (iOS)", href: "https://apps.apple.com/in/app/workra/id6820196978" },
     { label: "About Us", href: "#" },
     { label: "Blog", href: "#" }
   ],

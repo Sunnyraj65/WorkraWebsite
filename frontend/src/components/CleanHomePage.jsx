@@ -130,6 +130,16 @@ export const CleanHomePage = () => {
 
   const playStoreUrl =
     "https://play.google.com/store/apps/details?id=com.workra.mobile";
+  const appStoreUrl =
+    "https://apps.apple.com/in/app/workra/id6820196978";
+
+  const [downloadUrl, setDownloadUrl] = useState(playStoreUrl);
+
+  useEffect(() => {
+    if (typeof navigator !== "undefined" && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+      setDownloadUrl(appStoreUrl);
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-[#fafaf8] overflow-x-clip w-full max-w-full">
@@ -186,7 +196,7 @@ export const CleanHomePage = () => {
           {/* CTA Buttons Row - Side-by-side on mobile */}
           <div className="mt-7 sm:mt-9 flex items-center justify-center gap-2.5 sm:gap-3.5 max-w-sm mx-auto px-1">
             <a
-              href={playStoreUrl}
+              href={downloadUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 inline-flex items-center justify-center gap-1.5 px-4 sm:px-6 py-3 rounded-full bg-[#ffde59] hover:bg-[#fed330] text-slate-900 font-bold text-xs sm:text-sm shadow-[0_4px_22px_rgba(255,222,89,0.32)] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
@@ -373,7 +383,7 @@ export const CleanHomePage = () => {
                   </div>
 
                   <a
-                    href={playStoreUrl}
+                    href={downloadUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`w-full py-2.5 px-4 rounded-full flex items-center justify-center gap-1.5 font-semibold text-[13px] transition-all duration-200 active:scale-[0.98] ${

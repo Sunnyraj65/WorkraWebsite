@@ -30,7 +30,7 @@ export const LocalityRequestModal = ({ isOpen, onClose }) => {
       return;
     }
 
-    // Format WhatsApp message to Workra (+91 93341 32209)
+    // Format WhatsApp message to Workra (+91 92968 97288)
     const message = `*New Locality Request for Workra!* 🚀\n\n` +
       `📍 *Street/Society:* ${formData.street.trim()}\n` +
       `🏘️ *Locality:* ${formData.locality.trim()}\n` +
@@ -38,7 +38,7 @@ export const LocalityRequestModal = ({ isOpen, onClose }) => {
       `📱 *Customer WhatsApp:* ${formData.whatsapp.trim() || "Not provided"}\n\n` +
       `_Sent from useworkra.com_`;
 
-    const whatsappUrl = `https://wa.me/919334132209?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/919296897288?text=${encodeURIComponent(message)}`;
 
     // Save in localStorage as a backup so leads are never lost
     try {
@@ -81,7 +81,7 @@ export const LocalityRequestModal = ({ isOpen, onClose }) => {
       `🌆 *City:* ${formData.city.trim()}\n` +
       `📱 *Customer WhatsApp:* ${formData.whatsapp.trim() || "Not provided"}\n\n` +
       `_Sent from useworkra.com_`;
-    return `https://wa.me/919334132209?text=${encodeURIComponent(message)}`;
+    return `https://wa.me/919296897288?text=${encodeURIComponent(message)}`;
   };
 
   return (

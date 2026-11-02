@@ -30,7 +30,7 @@ const HOMEPAGE_SCHEMAS = [
     "url": "https://useworkra.com/",
     "logo": "https://useworkra.com/wlogo.png",
     "image": "https://useworkra.com/wlogo.png",
-    "telephone": "+919334132209",
+    "telephone": "+919296897288",
     "email": "support@workra.in",
     "priceRange": "₹",
     "address": { "@type": "PostalAddress", "streetAddress": "Patna", "addressLocality": "Patna", "addressRegion": "Bihar", "postalCode": "800001", "addressCountry": "IN" },
@@ -50,11 +50,11 @@ const HOMEPAGE_SCHEMAS = [
         ]}
       ]
     },
-    "sameAs": ["https://www.linkedin.com/company/workra","https://www.instagram.com/workra_","https://www.facebook.com/profile.php?id=61582246742034","https://play.google.com/store/apps/details?id=com.workra.mobile"],
+    "sameAs": ["https://www.linkedin.com/company/workra","https://www.instagram.com/workra_","https://www.facebook.com/profile.php?id=61582246742034","https://play.google.com/store/apps/details?id=com.workra.mobile","https://apps.apple.com/in/app/workra/id6820196978"],
     "parentOrganization": { "@id": "https://useworkra.com/#organization" }
   },
 
-  // MobileApplication
+  // MobileApplication - Android
   {
     "@context": "https://schema.org",
     "@type": "MobileApplication",
@@ -63,6 +63,17 @@ const HOMEPAGE_SCHEMAS = [
     "applicationCategory": "LifestyleApplication",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
     "url": "https://play.google.com/store/apps/details?id=com.workra.mobile",
+    "description": "Workra – Patna's on-demand house help app. Book verified female domestic helpers in minutes at flat ₹99/hour."
+  },
+  // MobileApplication - iOS
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Workra",
+    "operatingSystem": "iOS",
+    "applicationCategory": "LifestyleApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+    "url": "https://apps.apple.com/in/app/workra/id6820196978",
     "description": "Workra – Patna's on-demand house help app. Book verified female domestic helpers in minutes at flat ₹99/hour."
   },
   // Service pages navigation

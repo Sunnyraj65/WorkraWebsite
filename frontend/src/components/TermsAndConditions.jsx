@@ -252,7 +252,7 @@ export const TermsAndConditions = () => {
               Customer satisfaction is our highest priority. If you are not completely satisfied with the quality of cleaning:
             </p>
             <BulletItem>
-              <strong>24-Hour Reporting Window:</strong> Please notify our customer support team within 24 hours of service completion via WhatsApp (+91 93341 32209) or email (support@workra.in) with details or photos.
+              <strong>24-Hour Reporting Window:</strong> Please notify our customer support team within 24 hours of service completion via WhatsApp (+91 92968 97288) or email (support@workra.in) with details or photos.
             </BulletItem>
             <BulletItem>
               <strong>Re-cleaning / Fair Resolution:</strong> We will review your issue and, where appropriate, arrange a free touch-up cleaning or issue a fair resolution.
@@ -317,7 +317,7 @@ export const TermsAndConditions = () => {
             <div className="bg-gray-50 rounded-xl p-5 border border-gray-100 space-y-3 mt-4">
               <p className="font-semibold text-gray-800">Workra Legal &amp; Support Team</p>
               <p>Email: <a href="mailto:support@workra.in" className="text-verge-green font-medium hover:underline">support@workra.in</a></p>
-              <p>WhatsApp / Phone: <a href="tel:+919334132209" className="text-verge-green font-medium hover:underline">+91 93341 32209</a></p>
+              <p>WhatsApp / Phone: <a href="tel:+919296897288" className="text-verge-green font-medium hover:underline">+91 92968 97288</a></p>
               <p>Location: Patna, Bihar 800001, India</p>
             </div>
           </SectionCard>
