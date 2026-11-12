@@ -8,8 +8,9 @@ module.exports = {
   theme: {
   	extend: {
   		fontFamily: {
-  			sans: ['Poppins', 'DM Sans', 'system-ui', 'sans-serif'],
-  			serif: ['Playfair Display', 'Georgia', 'serif'],
+  			sans: ['Plus Jakarta Sans', 'DM Sans', 'system-ui', 'sans-serif'],
+  			display: ['Outfit', 'Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+  			serif: ['Fraunces', 'Playfair Display', 'Georgia', 'serif'],
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

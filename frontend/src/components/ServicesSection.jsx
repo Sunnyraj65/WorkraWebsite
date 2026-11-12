@@ -164,8 +164,11 @@ export const ServicesSection = ({ showHighlights = true, hideWave = false }) => 
                   WHAT WE DO
                 </span>
               </div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
-                What can we take care of?
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                What can we{" "}
+                <span className="font-serif italic font-semibold text-[#2b6534]">
+                  take care of?
+                </span>
               </h2>
               <p className="text-slate-500 text-sm sm:text-base mt-2.5 max-w-xl leading-relaxed">
                 Nearly all homes we've served book again. Book a verified female house helper in one tap for sweeping, mopping, utensils, or hourly help at flat ₹99/hr.
@@ -260,12 +263,14 @@ export const ServicesSection = ({ showHighlights = true, hideWave = false }) => 
               OUR SERVICES
             </span>
             <h2
-              className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4"
+              className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight tracking-tight mb-4"
               style={{ color: "#1a1a1a" }}
             >
               Book trusted house
               <br />
-              help in minutes.
+              <span className="font-serif italic font-semibold text-[#2b6534]">
+                help in minutes.
+              </span>
             </h2>
             <p className="text-slate-500 text-sm md:text-base leading-relaxed">
               From hourly bookings to everyday chores, Workra delivers verified

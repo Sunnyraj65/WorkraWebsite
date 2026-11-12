@@ -41,10 +41,13 @@ export const WhyChooseSection = () => {
       <div className="max-w-[1400px] mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-[#333] tracking-tight uppercase">
-            WHY CHOOSE <span className="text-[#00C885]">WORKRA</span>
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+            Why choose{" "}
+            <span className="font-serif italic font-semibold text-[#2b6534]">
+              Workra?
+            </span>
           </h2>
-          <div className="w-24 h-1.5 bg-[#00C885] mx-auto mt-4 rounded-full"></div>
+          <div className="w-20 h-1.5 bg-[#2b6534] mx-auto mt-4 rounded-full"></div>
         </div>
 
         {/* Features Grid */}
